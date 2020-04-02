@@ -1,0 +1,238 @@
+// Social Media Buttons
+
+// Facebook button
+.social-button-facebook {
+    background-color: rgba(0,0,0,0.25);
+    margin-bottom: 15px; // This ensures vertical spacing with .social-button-linkedin
+    width: 45%;
+    order: 1;
+    color: white;
+    cursor: pointer;
+}
+
+.social-button-facebook:hover {
+    background-color: #3b5998;
+}
+
+// Twitter button
+.social-button-twitter {
+    background-color: rgba(0,0,0,0.25); 
+    margin-bottom: 15px; // This ensures vertical spacing with .social-button-linkedin
+    width: 45%;
+    order: 2;
+    color: white;
+    cursor: pointer;
+}
+
+.social-button-twitter:hover {
+    background-color: #00aced;
+}
+
+// Linkedin button
+.social-button-linkedin {
+    background-color:rgba(0,0,0,0.25);
+    width: 45%;
+    order: 3;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.social-button-linkedin:hover {
+    background-color: #0077b5;
+    
+}
+//Article Read More buttons
+
+.read-more-button {
+    background-color: $nm-purple;
+    border-color: $nm-purple;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.read-more-button:hover {
+    background-color: $nm-purple-dark;
+    border-color: #735093;
+}
+
+.read-more-button-dm {
+    background-color: $nm-green;
+    border-color: $nm-green;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.read-more-button-dm:hover {
+    background-color: #26ab5f;
+    border-color: #239a55;
+}
+
+//Buttons on the image
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.img-container .img-button {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: #926fb1;
+    color: white;
+    font-size: .75rem;
+    padding: 0px 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+// contains all .button-container
+
+.buttons-container a {
+    text-decoration: none;
+    color: #333645;
+}
+
+
+// contains button elements
+.button-container {
+    border: solid 1px black;
+    padding: 30px;
+    margin: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    justify-content: center;
+}
+
+.button-container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.divider {
+    width:28px;
+    height: 3px;
+    background-color: $nm-grey;
+}
+
+.button-container p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 12px;
+    // align-items:center;
+}
+
+
+// Icons within the buttons
+.fa-th {
+    background-color: $nm-grey;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    padding-top:100px;
+    color: white;
+    justify-content: center;
+}
+
+.fa-th-button {
+    background-color: $nm-grey;
+}
+
+.fa-desktop {
+    background-color: $nm-light-blue;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-desktop-button {
+    background-color: $nm-light-blue;
+}
+
+.fa-chart-bar {
+    background-color: $nm-green;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-chart-bar-button {
+    background-color: $nm-green;
+}
+
+.fa-phone-volume {
+    background-color: $nm-red;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-phone-volume-button {
+    background-color: $nm-red;
+}
+
+.fa-code {
+    background-color: $nm-purple;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-code-button {
+    background-color: $nm-purple;
+}
+
+.fa-shield-alt {
+    background-color:$nm-pink;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-shield-alt-button {
+    background-color: $nm-pink;
+}
+
+.fa-graduation-cap {
+    background-color:$nm-purple;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0px 120px 17px;
+    text-align:center;
+    color: white;
+}
+
+.fa-graduation-cap-button {
+    background-color: $nm-purple;
+}
+

@@ -1,0 +1,23 @@
+// Viewports up 
+
+@media (max-width: 768px) {
+    header {
+        background-color: saddlebrown;  
+    }  
+}
+
+
+@media (min-width: 992px) and (max-width: 1259px) {
+    header {
+        background-color: olivedrab;
+       
+    }
+
+}
+
+@media (min-width: 1260px) {
+    header {
+        background-color: purple;
+    }
+
+}

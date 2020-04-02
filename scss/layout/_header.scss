@@ -1,0 +1,30 @@
+.logo{
+    order: 1;
+    flex-grow: 2;
+    padding-right: 100px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.phone{
+    order: 2;
+    flex-grow: 1;
+    padding: 5px;
+    width: 43px;
+    height: 23px; 
+    cursor: pointer;
+}
+
+.burger{
+    order: 3;
+    padding: 5px 15px;
+    width: 63px;
+    height: 56px; 
+    cursor: pointer;
+}
+
+.search{
+    order: 4;
+    min-width: 100%;
+    padding: 5px;
+}
