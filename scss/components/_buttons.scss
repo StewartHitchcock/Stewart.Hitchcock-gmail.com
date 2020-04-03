@@ -70,7 +70,7 @@
     border-color: #239a55;
 }
 
-//Buttons on the image
+//Buttons on the article images
 
 .img-container {
     position: relative;
@@ -124,7 +124,7 @@
 .divider {
     width:28px;
     height: 3px;
-    background-color: $nm-grey;
+    margin: 0px auto 10px;
 }
 
 .button-container p {
@@ -134,104 +134,344 @@
 }
 
 
-// Icons within the buttons
+// Icons within the nav buttons
 .fa-th {
     background-color: $nm-grey;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
+    margin: auto;
     text-align:center;
     padding-top:100px;
     color: white;
-    justify-content: center;
 }
 
 .fa-th-button {
     background-color: $nm-grey;
+    color: white;
 }
+
+#bespoke-software span {
+    background-color: $nm-grey;
+}
+
+// bespoke-software on hover
+#bespoke-software:hover {
+    background-color: $nm-grey;
+}
+
+#bespoke-software:hover h2 {
+    color: white;
+}
+
+#bespoke-software:hover i {
+    background-color: white;
+    color: $nm-grey;
+}
+
+#bespoke-software:hover span {
+    background-color: white;
+}
+
+#bespoke-software:hover p {
+    color: white;
+}
+
+#bespoke-software:hover .fa-th-button {
+    background-color: white;
+    color: $nm-grey;
+}
+
+//IT Support
 
 .fa-desktop {
     background-color: $nm-light-blue;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-desktop-button {
     background-color: $nm-light-blue;
+    color: white;
 }
+
+#it-support span {
+    background-color: $nm-light-blue;
+}
+
+// It Support on hover
+
+#it-support:hover {
+    background-color: $nm-light-blue;
+}
+
+#it-support:hover h2 {
+    color: white;
+}
+
+#it-support:hover i {
+    background-color: white;
+    color: $nm-light-blue;
+}
+
+#it-support:hover span {
+    background-color: white;
+}
+
+#it-support:hover p {
+    color: white;
+}
+
+#it-support:hover .fa-desktop-button {
+    background-color: white;
+    color: $nm-light-blue;
+}
+
+// Digital marketing
 
 .fa-chart-bar {
     background-color: $nm-green;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-chart-bar-button {
     background-color: $nm-green;
+    color: white;
 }
+
+#digital-marketing span {
+    background-color: $nm-green;
+}
+
+// digital marketing on hover
+
+#digital-marketing:hover {
+    background-color: $nm-green;
+}
+
+#digital-marketing:hover h2 {
+    color: white;
+}
+
+#digital-marketing:hover i {
+    background-color: white;
+    color: $nm-green;
+}
+
+#digital-marketing:hover span {
+    background-color: white;
+}
+
+#digital-marketing:hover p {
+    color: white;
+}
+
+#digital-marketing:hover .fa-chart-bar-button {
+    background-color: white;
+    color: $nm-green;
+}
+
+// Telecoms services
 
 .fa-phone-volume {
     background-color: $nm-red;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-phone-volume-button {
     background-color: $nm-red;
+    color: white;
 }
+
+#telecom-service span {
+    background-color: $nm-red;
+}
+
+// Telecom services on hover
+
+#telecom-service:hover {
+    background-color: $nm-red;
+}
+
+#telecom-service:hover h2 {
+    color: white;
+}
+
+#telecom-service:hover i {
+    background-color: white;
+    color: $nm-red;
+}
+
+#telecom-service:hover span {
+    background-color: white;
+}
+
+#telecom-service:hover p {
+    color: white;
+}
+
+#telecom-service:hover .fa-phone-volume-button {
+    background-color: white;
+    color: $nm-red;
+}
+
+// Web design
 
 .fa-code {
     background-color: $nm-purple;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-code-button {
     background-color: $nm-purple;
+    color: white;
 }
+
+#web-design span {
+    background-color: $nm-purple;
+}
+
+//Web design on hover
+
+#web-design:hover {
+    background-color: $nm-purple;
+}
+
+#web-design:hover h2 {
+    color: white;
+}
+
+#web-design:hover i {
+    background-color: white;
+    color: $nm-purple;
+}
+
+#web-design:hover span {
+    background-color: white;
+}
+
+#web-design:hover p {
+    color: white;
+}
+
+#web-design:hover .fa-code-button {
+    background-color: white;
+    color: $nm-purple;
+}
+
+// Cyber Security
 
 .fa-shield-alt {
     background-color:$nm-pink;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-shield-alt-button {
     background-color: $nm-pink;
+    color: white;
 }
+
+#cyber-security span {
+    background-color: $nm-pink;
+}
+
+// Cyber Security on hover
+
+#cyber-security:hover {
+    background-color: $nm-pink;
+}
+
+#cyber-security:hover h2 {
+    color: white;
+}
+
+#cyber-security:hover i {
+    background-color: white;
+    color: $nm-pink;
+}
+
+#cyber-security:hover span {
+    background-color: white;
+}
+
+#cyber-security:hover p {
+    color: white;
+}
+
+#cyber-security:hover .fa-shield-alt-button {
+    background-color: white;
+    color: $nm-pink;
+}
+
+// Developer Training
 
 .fa-graduation-cap {
     background-color:$nm-purple;
     border-radius: 50%;
     height: 60px;
     width: 60px;
-    margin: 0px 120px 17px;
     text-align:center;
     color: white;
+    margin: auto;
 }
 
 .fa-graduation-cap-button {
     background-color: $nm-purple;
+    color: white;
 }
 
+#developer-training span {
+    background-color: $nm-purple;
+}
+
+// Developer training on hover
+
+#developer-training:hover {
+    background-color: $nm-purple;
+}
+
+#developer-training:hover h2 {
+    color: white;
+}
+
+#developer-training:hover i {
+    background-color: white;
+    color: $nm-purple;
+}
+
+#developer-training:hover span {
+    background-color: white;
+}
+
+#developer-training:hover p {
+    color: white;
+}
+
+#developer-training:hover .fa-shield-alt-button {
+    background-color: white;
+    color: $nm-purple;
+}
