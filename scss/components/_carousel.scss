@@ -17,7 +17,7 @@
 }
 
   .carousel-text {
-    top: 500px;
+    top: 330px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -27,11 +27,18 @@
 .carousel h1 {
     text-align: center;
     margin-bottom: 25px;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    line-height: 45px;
+    font-weight: normal;
 }
 
 .carousel p {
     text-align: center;
     margin: 0px 25px;
+    line-height: 30px;
+    letter-spacing: .4px;
 }
 
 .carousel button {
@@ -43,6 +50,7 @@
     margin-top: 25px;
     padding: 10px 20px;
     font-size: 20px;
+    width: 60%;
 }
 
 .carousel button:hover {

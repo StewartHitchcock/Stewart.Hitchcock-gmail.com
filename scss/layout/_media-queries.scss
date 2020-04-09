@@ -1,20 +1,162 @@
 // Viewports up 
+@media screen and (max-width: 767px) {
+    .client-container {
+        display: none;
+    }
 
-@media (min-width: 768px) {
+    .accredits {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .buttons-container {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .logo-container {
+        order: 1;
+    }
+
+    .search-container {
+        order: 2;
+        width: 30%;
+    }
+
+    .burger-container {
+        order: 3;
+    }
+
+    .bottom-navs {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .website {
+        margin-left: -10px;
+    }
+    
+    .social-media {
+        flex-direction: row;
+        width: 300px;
+        margin-right: -160px;
+    }
+
+    .social-button-facebook {
+        width: 45%;
+        margin-right: 20px;
+    }
+
+    .social-button-twitter {
+        width: 45%;
+    }
+
+    .social-button-linkedin {
+        width: 45%;
+    }
+
 }
 
 
 @media (min-width: 992px) {
-    header {
-        background-color: olivedrab;
-       
+
+
+    .support-button {
+        display: inline-flex;
+        order:2;
     }
 
+    .contact-button {
+        display: inline-flex;
+        order: 3;
+    }
+
+    .search-container {
+        order:4;
+    }
+
+    .burger-container {
+        order: 5;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .culture-div{
+        // background: url("../img/asset27.png");
+        background-size: auto 100%;
+        background-position: right center;        
+    }
+
+    .articles-container {
+        display: flex;
+    }
+    
+    // Resizing the accreditations section
+
+    .accredits {
+        height:210px;
+        margin-top: 100px;
+    }
+   
+    .accreditation {
+        height: 150px;
+        width: 250px;
+    }
+
+    // Nav Buttons
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-3-nav {
+        display: inline-flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1199px){
+    // This hides the 3rd article in this viewport
+    .hidden {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
+    
     header {
         background-color: purple;
     }
+    .bottom-navs-4 {
+        flex-direction: row;
+    }
 
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .footer-container .break {
+        display: none;
+    }
+
+    .social-media {
+        margin-right: 0px;
+    }
 }
