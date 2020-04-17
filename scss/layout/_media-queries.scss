@@ -1,33 +1,119 @@
 // Viewports up 
 @media screen and (max-width: 767px) {
-    .client-container {
+    .clients-container {
         display: none;
     }
 
     .accredits {
         display: none;
     }
+
+    .search-container-lrg {
+        display: none;
+    }
 }
 
 
 @media screen and (min-width: 768px) {
+    //nav-cards flex and widths
 
-    .buttons-container {
-        display:flex;
-        flex-direction: column;
+    .header-items,
+    .buttons-container,
+    .culture-div-container,
+    .articles-container,
+    .footer-container-contents,
+    .clients-container,
+    .accredits,
+    .carousel-margin
+     {
+        width: 750px;
     }
 
-    .phone-container {
+    .header-items {
+        padding: 20px 0px;
+    }
+
+    .carousel-margin {
+        margin: 0 auto;
+    }
+
+    .articles {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        height: 1714px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button-container {
+        margin: 0px;
+    }
+
+    #bespoke-software, 
+    #it-support,
+    #digital-marketing {
+        min-width: 294px; 
+        max-height: 300px;
+        margin: 10px 0px;
+    }
+
+    #telecom-service,
+    #cyber-security {
+        min-width: 345px;
+        max-height: 300px;
+        width: 345px;
+        margin: 30px 15px 0px 0px;
+    }
+
+    #developer-training,
+    #web-design {
+        min-width: 345px;
+        max-height: 300px;
+        width: 345px;
+        margin: 30px 0px 0px 15px;  
+    }
+
+    .header-items .phone {
         display: none;
     }
 
-    .logo-container {
+    .header-items .logo {
         order: 1;
     }
 
     .search-container {
-        order: 2;
-        width: 30%;
+        display: none;
+    }
+
+    .search-container-lrg {
+        display: inline-flex;
+        width: 35%;
+        margin: 0px 20px 0px 20px;
+        height: 63px;
+        background-color: white;
+        border: 2px solid rgba(0,0,0,0.1);
+    }
+
+    .search-container-lrg input {
+        padding-left: 10px;
+      }
+
+    .search-container-lrg input::placeholder {
+        opacity: 1;
+    }
+
+    .search-container-lrg i {
+        color: white;
+        background-color: #999aa2;
+    }
+
+    .search-box {
+        background-color: white;
     }
 
     .burger-container {
@@ -41,6 +127,10 @@
     }
 
     .footer-container {
+        height: 528px;
+    }
+
+    .footer-container-contents {
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -69,43 +159,129 @@
         width: 45%;
     }
 
+    .culture-div p {
+        margin-bottom: 25px;
+    }
+
+ 
+
 }
 
 
 @media (min-width: 992px) {
 
+    .header-items,
+    .buttons-container,
+    .culture-div-container,
+    .articles-container,
+    .clients-container,
+    .footer-container-contents,
+    .accredits,
+    .carousel-margin,
+    .navbar-buttons,
+    .nav-hover-contents {
+        width: 970px;
+    }
+
+    .nav-hover-contents {
+        margin: auto auto;
+    }
+
+    .buttons-container {
+        display:flex;
+        flex-direction: row;
+        height: 1096px;
+        flex-wrap: wrap;
+    }
+
+    .button-container {
+        margin:0px;
+    }
+
+    #bespoke-software, 
+    #it-support,
+    #digital-marketing {
+        min-width: 294px; 
+        max-height: 356px;
+        width: 294px;
+        height: 356px;
+    }
+
+    #bespoke-software {
+        margin-right: 15px;
+    }
+
+    #it-support {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    #digital-marketing {
+        margin-left: 15px;
+    }
+
+    #telecom-service,
+    #cyber-security {
+        min-width: 455px;
+        max-height: 300px;
+        width: 455px;
+        margin: 30px 15px 0px 0px;
+    }
+
+    #developer-training,
+    #web-design {
+        min-width: 455px;
+        max-height: 300px;
+        width: 445px;
+        margin: 30px 0px 0px 15px;  
+    }
+
+    #cyber-security,
+    #developer-training {
+        margin-bottom: 30px;
+    }
+
+    .search-container-lrg {
+        display: none;
+    }
 
     .support-button {
         display: inline-flex;
-        order:2;
+        margin-right: 20px;
+        margin-left: -500px; 
+        height: 56px;
+        width: 144px;
+        font-size: 1.125rem;
+        border-radius: 5px;
+        align-items: center;
     }
 
     .contact-button {
         display: inline-flex;
-        order: 3;
+        margin-right: 20px; 
+        height: 56px;
+        width: 144px;
+        font-size: 1.125rem;   
+        border-radius: 5px;    
+        align-items: center;
     }
 
-    .search-container {
-        order:4;
+    .search-button {
+        display: inline-flex;
+        height: 56px;
+        margin-right: 20px;
+        width: 63px;
+        font-size: 1.125rem;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
     }
-
-    .burger-container {
-        order: 5;
-    }
-
-    .search-box {
-        display: none;
-    }
-
-    .culture-div{
-        // background: url("../img/asset27.png");
+   
+    .culture-div{ 
         background-size: auto 100%;
         background-position: right center;        
     }
 
-    .articles-container {
-        display: flex;
-    }
     
     // Resizing the accreditations section
 
@@ -119,17 +295,31 @@
         width: 250px;
     }
 
-    // Nav Buttons
-
-    .buttons-container {
+    .articles-container {
         display: flex;
-        flex-direction: column;
     }
 
-    .top-3-nav {
-        display: inline-flex;
-        flex-direction: row;
+    .img-container {
+        height: 100%;
+        width: auto;
+        overflow: hidden;
     }
+    
+    .img-container img {
+        transition: transform .6s;
+    }
+    
+    .img-container img:hover {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    .culture-div {
+        background: url("../img/asset27.png"), $nm-blue;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
 }
 
 @media (min-width:992px) and (max-width: 1199px){
@@ -139,24 +329,118 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1260px) {
     
-    header {
-        background-color: purple;
-    }
-    .bottom-navs-4 {
-        flex-direction: row;
+    .header-items,
+    .buttons-container,
+    .articles-container,
+    .clients-container,
+    .footer-container-contents,
+    .accredits,
+    .carousel-margin,
+    .navbar-buttons,
+    .nav-hover-contents
+     {
+        width: 1200px;
     }
 
-    .footer-container {
-        flex-direction: row;
+    .nav-hover-contents {
+        margin: auto auto;
     }
 
-    .footer-container .break {
+    .nav-button {
+        width: 193px;
+    }
+
+    .culture-div-container {
+        width: 600px;
+        margin-left: 15%;
+
+    }
+
+    .culture-div {
+        height: 553px;
+    }
+
+
+    .search-button {
+        display: none;
+    }
+
+    .search-container-lrg {
+        display: inline-flex;
+    }
+
+    .buttons-container {
+        display:flex;
+        flex-direction: row;
+        height: 700px;
+        flex-wrap: wrap;
+        margin: 0px auto 30px;
+    }
+
+    .button-container {
+        margin: 0px;
+    }
+
+    #bespoke-software, 
+    #it-support,
+    #digital-marketing {
+        min-width: 360px; 
+        max-height: 356px;
+        width: 360px;
+        height: 356px;
+    }
+
+    #bespoke-software {
+        margin-right: 15px;
+    }
+
+    #it-support {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    #digital-marketing {
+        margin-left: 15px;
+    }
+
+    #telecom-service,
+    #cyber-security, 
+    #web-design {
+        min-width: 270px;
+        max-height: 300px;
+        width: 270px;
+        margin: 30px 15px 0px 0px;
+    }
+    
+    #developer-training {
+        min-width: 270px;
+        max-height: 300px;
+        width: 270px;
+        margin: 30px 0px 0px 10px;
+    }
+
+    .footer-container{
+        height:309px;
+    }
+
+    .footer-container-contents {
+        flex-direction: row;
+        margin: auto auto;
+    }
+
+    .footer-container-contents .break {
         display: none;
     }
 
     .social-media {
         margin-right: 0px;
+    }
+
+    .support-button {
+        display: inline-flex;
+        margin-right: 20px;
+        margin-left: -50px; 
     }
 }

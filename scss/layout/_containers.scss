@@ -1,40 +1,51 @@
 // Header container
 
-
+.header-items,
+.carousel,
+.buttons-container,
+.culture-div,
+.articles-container,
+.clients-container,
+.footer-container-contents,
+.accredits
+{
+    margin: auto;
+}
 
 
 //  footer containers
-
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    padding: 47px 20px 0px;
     background-color: $nm-blue;
 }
 
-.footer-container p {
+.footer-container-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container-contents p {
     font-size: 0.8125rem;
     color: white;
 }
 
-.footer-container a {
+.footer-container-contents a {
     font-size: 0.8125rem;
     color: white;
 }
 
-.footer-container h4 {
+.footer-container-contents h4 {
     font-size: 1rem;
     color: white;
     margin-bottom: 26px;
     text-transform: uppercase;
 }
 
-.footer-container ul li {
+.footer-container-contents ul li {
     font-size: 0.8125rem;
     color: white;
 }
 
-.footer-container address {
+.footer-container-contents address {
     font-size: 0.8125rem;
     color: white;
     font-style: normal;
@@ -43,12 +54,10 @@
 // Social Media button container
 
 .social-media-buttons {
-    display: flex;
     flex-flow: wrap;
+    // display:flex;
     justify-content: space-between;
 }
-
-
 
 //Culture area
 
@@ -57,6 +66,7 @@
     padding: 50px 15px;
     display: flex;
     flex-direction: column;
+    height: 493px;
 }
 
 .culture-div h3 {
@@ -65,7 +75,7 @@
     margin-bottom: 25px;
     margin-top: -25px;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 2.25rem;
 }
 
 
@@ -73,73 +83,72 @@
     color: white;
     margin-bottom: 25px;
     font-weight: 200;
-    font-size: .75rem;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    
 }
 
 .culture-div p:nth-of-type(1) {
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 // Clients container
 
-.client-container {
+.clients-container {
     display: flex;
-    justify-content: space-between;
+    height: 170px;
+    align-items: center;
 }
 
-.colour {
-    display:none;
-}
-.busseys {
-    background: url("../img/asset 13.jpeg") no-repeat;
-    height: 100px;
+.client-container {
     width: 200px;
+    height: 46px;
     padding: 0px 20px;
-    margin-left: 10px;
-    
+    margin: auto;
+}
+
+.clients {
+    height: 100%;
+}
+
+.busseys {
+    background: url("../img/asset 13.jpeg") no-repeat; 
+    background-size: 100% 100%;  
 }
 .busseys:hover {
-    background: url("../img/asset12.png") no-repeat;
-    
+    background: url("../img/asset12.png") no-repeat; 
+    background-size: 100% 100%;
 }
 
 .crane {
-    background: url("../img/asset 15.jpeg") no-repeat;
-    height: 100px;
-    width: 200px;
-    padding: 0px 20px;
-    margin-left: 10px;
-    
+    background: url("../img/asset 15.jpeg") no-repeat;  
+    background-size: 100% 100%;  
 }
+
 .crane:hover {
     background: url("../img/asset 14.png") no-repeat;
-    
+    background-size: 100% 100% ;
 }
 
 .beat {
-    background: url("../img/asset 17.jpeg") no-repeat;
-    height: 100px;
-    width: 100px;
-    padding: 0px 20px;
-    margin-left: 10px;
-    
+    background: url("../img/asset 17.jpeg") no-repeat; 
+    background-size: auto 100%; 
 }
+
 .beat:hover {
-    background: url("../img/asset 16.png") no-repeat;
-    
+    background: url("../img/asset 16.png") no-repeat; 
+    background-size: auto 100%; 
 }
+
 .diver {
-    background: url("../img/asset 19.jpeg") no-repeat;
-    height: 100px;
-    width: 400px;
-    padding: 0px 20px;
-    margin-left: 10px;
-    
+    background: url("../img/asset 19.jpeg") no-repeat; 
+    background-size: 100% 100%;   
 }
+
 .diver:hover {
     background: url("../img/asset 18.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 // Accreditation container

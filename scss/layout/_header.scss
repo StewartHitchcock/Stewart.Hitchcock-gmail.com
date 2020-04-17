@@ -1,12 +1,12 @@
 //header container
 
 .header-items {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  margin: 5px 10px 10px 5px;
+  padding: 20px 15px;
+  margin-top: 20px;
   width: 100%;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .break {
@@ -16,77 +16,103 @@
 
 // Netmatters logo 
 
-.logo-container img {
+.logo-container {
+  width: 100%;
+}
+
+.header-items img {
   height: auto;
-  width: 80%;
-  margin: 10px 0px 0px 0px;
+  max-width: 100%;
+  margin: 10px 0px 10px 10px;
 }
 
 // Phone icon styling
 
-.phone-container {
-  margin-left: 10px;
-  margin-right: 20px;
-}
-
 .fa-phone-alt {
   color: $nm-blue;
-  font-size: 20px; 
+  font-size: 24px; 
+  padding: 10px 0px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 // Burger button styling
 
 .burger-container {
-  margin-left: auto;
-  margin-right: 10px;
-}
-
-.burger-container button {
-  background-color: $nm-blue;
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  margin-left: auto;
+  margin-right: 15px;
+  background-color: $nm-blue;  
+  justify-content: center;
   cursor: pointer;
-  color: white;
-  text-decoration: none; 
-  font-size: 12px;
-  border: none; 
+  padding: 10px 15px 5px;
   border-radius: 3px;
+  height: 63px;
 }
 
-.burger-container:hover button {
+.burger-container p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.burger,
+.burger-top {
+  width: 35px;
+  height: 3px;
+  margin: 0px auto 6px;
+  background-color: white;
+}
+
+.burger-container:hover {
   background-color: #22242e;
 }
 
-.fa-bars {
-  color: white;
-  text-align: center;
-  font-size: 22px;
+.burger-container:hover button{
+  background-color: #22242e;
 }
+
 
 // Search bar styling
 .search-container {
   display: inline-flex;
-  width: 97%;
+  width: 92%;
   margin: 0px 10px 5px 10px;
-  border: 2px solid rgba(0,0,0,0.1);
   overflow: hidden;
+  background-color: rgba(0,0,0,0.1);
+  outline: 1px solid rgba(255,255,255,0.2);
+  border: 2px solid rgba(0,0,0,0.1);
+
+}
+
+.search-container input {
+  padding-left: 10px;
+}
+
+.search-container input::placeholder {
+  color: #262626;
+  opacity: 1;
   
 }
   
-  .search-icon {
+.search-icon {
   padding: 0.5rem;
+  background-color: #d9d9d9;
+  color:#000000;
+  
 }
   
-  .search-box {   
+.search-box {   
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
-  
+  border:none; 
+  background-color:#d9d9d9;
 }
 
 .support-button {
   display: none;
-  background-color: #999AA2;
+  background-color: #4183d7;
   color: white;
   text-transform: uppercase;
   margin-right: 5px;
@@ -96,12 +122,12 @@
 }
 
 .support-button:hover {
-  background-color: #84858f;
+  background-color: #2a6ec6;
 }
 
 .contact-button {
   display: none;
-  background-color: #4183d7;
+  background-color: #999AA2;
   color: white;
   text-transform: uppercase;
   border: none;
@@ -110,5 +136,22 @@
 }
 
 .contact-button:hover {
-  background-color: #4183d7;
+  background-color: #84858f;
+}
+
+.search-button {
+  display: none;
+  background-color: #999AA2;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  padding: 14px 10px;
+}
+
+
+//navbar 
+
+.navbar {
+  display:none;
 }

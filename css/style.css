@@ -3,56 +3,68 @@
   font-family: Poppins, sans-serif;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding-inline-start: 0px;
 }
 
 body {
   letter-spacing: 0.4px;
   line-height: 1.42857143;
-  margin-right: -1px;
-  margin-left: -1px;
+  margin: 0px;
 }
 
 .hidden {
   display: none;
 }
 
+.header-items,
+.carousel,
+.buttons-container,
+.culture-div,
+.articles-container,
+.clients-container,
+.footer-container-contents,
+.accredits {
+  margin: auto;
+}
+
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  padding: 47px 20px 0px;
   background-color: #333645;
 }
 
-.footer-container p {
+.footer-container-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container-contents p {
   font-size: 0.8125rem;
   color: white;
 }
 
-.footer-container a {
+.footer-container-contents a {
   font-size: 0.8125rem;
   color: white;
 }
 
-.footer-container h4 {
+.footer-container-contents h4 {
   font-size: 1rem;
   color: white;
   margin-bottom: 26px;
   text-transform: uppercase;
 }
 
-.footer-container ul li {
+.footer-container-contents ul li {
   font-size: 0.8125rem;
   color: white;
 }
 
-.footer-container address {
+.footer-container-contents address {
   font-size: 0.8125rem;
   color: white;
   font-style: normal;
 }
 
 .social-media-buttons {
-  display: flex;
   flex-flow: wrap;
   justify-content: space-between;
 }
@@ -62,6 +74,7 @@ body {
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
+  height: 493px;
 }
 
 .culture-div h3 {
@@ -70,77 +83,77 @@ body {
   margin-bottom: 25px;
   margin-top: -25px;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 2.25rem;
 }
 
 .culture-div p {
   color: white;
   margin-bottom: 25px;
   font-weight: 200;
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.875rem;
 }
 
 .culture-div p:nth-of-type(1) {
-  font-weight: bold;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.clients-container {
+  display: flex;
+  height: 170px;
+  align-items: center;
 }
 
 .client-container {
-  display: flex;
-  justify-content: space-between;
+  width: 200px;
+  height: 46px;
+  padding: 0px 20px;
+  margin: auto;
 }
 
-.colour {
-  display: none;
+.clients {
+  height: 100%;
 }
 
 .busseys {
   background: url("../img/asset 13.jpeg") no-repeat;
-  height: 100px;
-  width: 200px;
-  padding: 0px 20px;
-  margin-left: 10px;
+  background-size: 100% 100%;
 }
 
 .busseys:hover {
   background: url("../img/asset12.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .crane {
   background: url("../img/asset 15.jpeg") no-repeat;
-  height: 100px;
-  width: 200px;
-  padding: 0px 20px;
-  margin-left: 10px;
+  background-size: 100% 100%;
 }
 
 .crane:hover {
   background: url("../img/asset 14.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .beat {
   background: url("../img/asset 17.jpeg") no-repeat;
-  height: 100px;
-  width: 100px;
-  padding: 0px 20px;
-  margin-left: 10px;
+  background-size: auto 100%;
 }
 
 .beat:hover {
   background: url("../img/asset 16.png") no-repeat;
+  background-size: auto 100%;
 }
 
 .diver {
   background: url("../img/asset 19.jpeg") no-repeat;
-  height: 100px;
-  width: 400px;
-  padding: 0px 20px;
-  margin-left: 10px;
+  background-size: 100% 100%;
 }
 
 .diver:hover {
   background: url("../img/asset 18.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .accredits {
@@ -192,12 +205,12 @@ body {
 }
 
 .header-items {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  margin: 5px 10px 10px 5px;
+  padding: 20px 15px;
+  margin-top: 20px;
   width: 100%;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .break {
@@ -205,70 +218,94 @@ body {
   height: 0;
 }
 
-.logo-container img {
-  height: auto;
-  width: 80%;
-  margin: 10px 0px 0px 0px;
+.logo-container {
+  width: 100%;
 }
 
-.phone-container {
-  margin-left: 10px;
-  margin-right: 20px;
+.header-items img {
+  height: auto;
+  max-width: 100%;
+  margin: 10px 0px 10px 10px;
 }
 
 .fa-phone-alt {
   color: #333645;
-  font-size: 20px;
+  font-size: 24px;
+  padding: 10px 0px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 .burger-container {
-  margin-left: auto;
-  margin-right: 10px;
-}
-
-.burger-container button {
-  background-color: #333645;
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
+  margin-left: auto;
+  margin-right: 15px;
+  background-color: #333645;
+  justify-content: center;
   cursor: pointer;
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  border: none;
+  padding: 10px 15px 5px;
   border-radius: 3px;
+  height: 63px;
+}
+
+.burger-container p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.burger,
+.burger-top {
+  width: 35px;
+  height: 3px;
+  margin: 0px auto 6px;
+  background-color: white;
+}
+
+.burger-container:hover {
+  background-color: #22242e;
 }
 
 .burger-container:hover button {
   background-color: #22242e;
 }
 
-.fa-bars {
-  color: white;
-  text-align: center;
-  font-size: 22px;
-}
-
 .search-container {
   display: inline-flex;
-  width: 97%;
+  width: 92%;
   margin: 0px 10px 5px 10px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+  padding-left: 10px;
+}
+
+.search-container input::placeholder {
+  color: #262626;
+  opacity: 1;
 }
 
 .search-icon {
   padding: 0.5rem;
+  background-color: #d9d9d9;
+  color: #000000;
 }
 
 .search-box {
   padding: 0.5rem 0.5rem 0.5rem 0;
   flex: 1;
+  border: none;
+  background-color: #d9d9d9;
 }
 
 .support-button {
   display: none;
-  background-color: #999AA2;
+  background-color: #4183d7;
   color: white;
   text-transform: uppercase;
   margin-right: 5px;
@@ -278,12 +315,12 @@ body {
 }
 
 .support-button:hover {
-  background-color: #84858f;
+  background-color: #2a6ec6;
 }
 
 .contact-button {
   display: none;
-  background-color: #4183d7;
+  background-color: #999AA2;
   color: white;
   text-transform: uppercase;
   border: none;
@@ -292,7 +329,30 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #4183d7;
+  background-color: #84858f;
+}
+
+.search-button {
+  display: none;
+  background-color: #999AA2;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  padding: 14px 10px;
+}
+
+.navbar {
+  display: none;
+}
+
+.footer-container {
+  height: 894px;
+  padding: 47px 0px 43px;
+}
+
+.footer-container-contents {
+  margin: 0px 30px;
 }
 
 .contactus {
@@ -312,11 +372,6 @@ body {
   margin: 0px 0px 30px;
 }
 
-.aboutnm ul {
-  padding: 0px;
-  margin: 0px;
-}
-
 .aboutnm li {
   list-style-type: none;
 }
@@ -332,11 +387,6 @@ body {
 
 .website {
   margin: 0px 0px 30px;
-}
-
-.website ul {
-  padding: 0px;
-  margin: 0px;
 }
 
 .website li {
@@ -452,11 +502,16 @@ body {
 }
 
 .culture-div button {
-  width: 40%;
+  width: 170px;
   text-transform: uppercase;
   border-radius: 2px;
   border: none;
   padding: 10px 0px;
+  font-size: 1.07rem;
+}
+
+.culture-div button:hover {
+  opacity: 0.8;
 }
 
 .buttons-container a {
@@ -474,6 +529,8 @@ body {
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  position: relative;
+  max-width: 720px;
 }
 
 .button-container h2 {
@@ -503,15 +560,8 @@ body {
   padding: 5px 15px;
 }
 
-.fa-th {
+#bespoke-software .icon-circle {
   background-color: #67809f;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-  color: white;
 }
 
 .fa-th-button {
@@ -549,14 +599,12 @@ body {
   color: #67809f;
 }
 
-.fa-desktop {
+#bespoke-software:hover .icon-circle {
+  background-color: white;
+}
+
+#it-support .icon-circle {
   background-color: #4183d7;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-desktop-button {
@@ -594,14 +642,12 @@ body {
   color: #4183d7;
 }
 
-.fa-chart-bar {
+#it-support:hover .icon-circle {
+  background-color: white;
+}
+
+#digital-marketing .icon-circle {
   background-color: #2ecc71;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-chart-bar-button {
@@ -639,14 +685,12 @@ body {
   color: #2ecc71;
 }
 
-.fa-phone-volume {
+#digital-marketing:hover .icon-circle {
+  background-color: white;
+}
+
+#telecom-service .icon-circle {
   background-color: #d64541;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-phone-volume-button {
@@ -684,14 +728,12 @@ body {
   color: #d64541;
 }
 
-.fa-code {
+#telecom-service:hover .icon-circle {
+  background-color: white;
+}
+
+#web-design .icon-circle {
   background-color: #926fb1;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-code-button {
@@ -729,14 +771,12 @@ body {
   color: #926fb1;
 }
 
-.fa-shield-alt {
+#web-design:hover .icon-circle {
+  background-color: white;
+}
+
+#cyber-security .icon-circle {
   background-color: #f62459;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-shield-alt-button {
@@ -774,14 +814,12 @@ body {
   color: #f62459;
 }
 
-.fa-graduation-cap {
+#cyber-security:hover .icon-circle {
+  background-color: white;
+}
+
+#developer-training .icon-circle {
   background-color: #926fb1;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  color: white;
-  margin: auto;
 }
 
 .fa-graduation-cap-button {
@@ -820,6 +858,10 @@ body {
   color: #926fb1;
 }
 
+#developer-training:hover .icon-circle {
+  background-color: white;
+}
+
 .fab {
   font-size: 35px;
   margin: 0px 0px 1px;
@@ -829,9 +871,29 @@ body {
   padding: 0px 7px;
 }
 
+.btn-icn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.nav-icn {
+  padding: 0px 0px 10px;
+}
+
 .articles {
   padding: 30px 15px;
   margin-left: 1px;
+  background-color: #f2f2f2;
 }
 
 .articles h4 {
@@ -839,6 +901,8 @@ body {
   border-bottom: solid black 2px;
   width: 13%;
   align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .articles a {
@@ -866,14 +930,13 @@ body {
 }
 
 .articles-container {
-  background-color: white;
-  box-shadow: 0px 2px 10px #666666 inset;
   padding: 50px 0px;
-  margin: 0px -12px;
+  background-color: #f2f2f2;
+  padding: 50px 0px;
 }
 
 .article-container {
-  border: solid black 1px;
+  border: solid #ccc 1px;
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -882,7 +945,7 @@ body {
 .author {
   margin-top: 8px;
   padding-top: 30px;
-  border-top: solid black 1px;
+  border-top: solid #ccc 1px;
   display: flex;
 }
 
@@ -902,9 +965,10 @@ body {
 
 .carousel {
   height: 768px;
-  width: 400px;
+  width: auto;
   color: white;
   overflow: hidden;
+  margin-top: 500px;
 }
 
 .carousel-img {
@@ -920,14 +984,17 @@ body {
   top: 330px;
   bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   position: absolute;
 }
 
+.carousel-margin {
+  margin: 0 25px;
+}
+
 .carousel h1 {
-  text-align: center;
   margin-bottom: 25px;
-  font-size: 38px;
+  font-size: 2.375rem;
   text-transform: uppercase;
   letter-spacing: 0.4px;
   line-height: 45px;
@@ -935,10 +1002,9 @@ body {
 }
 
 .carousel p {
-  text-align: center;
-  margin: 0px 25px;
   line-height: 30px;
   letter-spacing: 0.4px;
+  margin-bottom: 10px;
 }
 
 .carousel button {
@@ -946,11 +1012,10 @@ body {
   background-color: #926fb1;
   border: none;
   color: white;
-  margin-left: 90px;
-  margin-top: 25px;
   padding: 10px 20px;
   font-size: 20px;
-  width: 60%;
+  width: 223px;
+  cursor: pointer;
 }
 
 .carousel button:hover {
@@ -958,32 +1023,356 @@ body {
 }
 
 @keyframes image-hover {}
+.navbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 99px;
+  background-color: #333645;
+}
+
+.navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto auto;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #333645;
+  width: 154px;
+  height: 99px;
+  padding: 0px 15px;
+  border: solid black 1px;
+  text-decoration: none;
+  padding: 19px 0px 18px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.nav-buttons .nav-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 10px;
+  line-height: 2.813rem;
+}
+
+.navbar-buttons .fa-code {
+  color: #926fb1;
+}
+
+.nav-bar-web:hover .fa-code {
+  color: white;
+}
+
+.navbar-buttons .fa-desktop {
+  color: #4183d7;
+}
+
+.nav-bar-it:hover .fa-desktop {
+  color: white;
+}
+
+.navbar-buttons .fa-phone-volume {
+  color: #d64541;
+}
+
+.nav-bar-telecoms:hover .fa-phone-volume {
+  color: white;
+}
+
+.navbar-buttons .fa-th {
+  color: #67809f;
+}
+
+.nav-bar-bespoke:hover .fa-th {
+  color: white;
+}
+
+.navbar-buttons .fa-chart-bar {
+  color: #2ecc71;
+}
+
+.nav-bar-digital:hover .fa-chart-bar {
+  color: white;
+}
+
+.navbar-buttons .fa-shield-alt {
+  color: #f62459;
+}
+
+.nav-bar-cyber:hover .fa-shield-alt {
+  color: white;
+}
+
+.navbar-buttons p {
+  font-size: 12px;
+}
+
+.nav-bar-web:hover {
+  background-color: #926fb1;
+}
+
+.nav-bar-it:hover {
+  background-color: #4183d7;
+}
+
+.nav-bar-telecoms:hover {
+  background-color: #d64541;
+}
+
+.nav-bar-bespoke:hover {
+  background-color: #67809f;
+}
+
+.nav-bar-digital:hover {
+  background-color: #2ecc71;
+}
+
+.nav-bar-cyber:hover {
+  background-color: #f62459;
+}
+
+.nav-hover-contents {
+  display: none;
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 99px;
+  left: 0;
+}
+.nav-hover-contents ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 500px;
+  height: 45px;
+}
+.nav-hover-contents ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  height: 45px;
+}
+.nav-hover-contents a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 45px;
+  justify-content: center;
+}
+
+.nav-hover-web {
+  background-color: #926fb1;
+}
+.nav-hover-web ::before {
+  background-color: #926fb1;
+}
+.nav-hover-web ::after {
+  background-color: #926fb1;
+}
+
+.nav-hover-it {
+  background-color: #4183d7;
+}
+.nav-hover-it ::before {
+  background-color: #4183d7;
+}
+.nav-hover-it ::after {
+  background-color: #4183d7;
+}
+
+.nav-hover-telecoms {
+  background-color: #d64541;
+}
+.nav-hover-telecoms ::before {
+  background-color: #d64541;
+}
+.nav-hover-telecoms ::after {
+  background-color: #d64541;
+}
+
+.nav-hover-bespoke {
+  background-color: #67809f;
+}
+.nav-hover-bespoke ::before {
+  background-color: #67809f;
+}
+.nav-hover-bespoke ::after {
+  background-color: #67809f;
+}
+
+.nav-hover-digital {
+  background-color: #2ecc71;
+}
+.nav-hover-digital ::before {
+  background-color: #2ecc71;
+}
+.nav-hover-digital ::after {
+  background-color: #2ecc71;
+}
+
+.nav-hover-cyber {
+  background-color: #f62459;
+}
+.nav-hover-cyber ::before {
+  background-color: #f62459;
+}
+.nav-hover-cyber ::after {
+  background-color: #f62459;
+}
+
+.nav-bar-web:hover .nav-hover-web {
+  display: block;
+}
+
+.nav-bar-it:hover .nav-hover-it {
+  display: block;
+}
+
+.nav-bar-telecoms:hover .nav-hover-telecoms {
+  display: block;
+}
+
+.nav-bar-bespoke:hover .nav-hover-bespoke {
+  display: block;
+}
+
+.nav-bar-digital:hover .nav-hover-digital {
+  display: block;
+}
+
+.nav-bar-cyber:hover .nav-hover-cyber {
+  display: block;
+}
+
+.nav-hover-contents a:last-of-type::after {
+  display: none;
+}
+
+.nav-hover-contents a:nth-of-type(1n+2) {
+  padding-left: 20px;
+}
+
 @media screen and (max-width: 767px) {
-  .client-container {
+  .clients-container {
     display: none;
   }
 
   .accredits {
     display: none;
   }
+
+  .search-container-lrg {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
-  .buttons-container {
-    display: flex;
-    flex-direction: column;
+  .header-items,
+.buttons-container,
+.culture-div-container,
+.articles-container,
+.footer-container-contents,
+.clients-container,
+.accredits,
+.carousel-margin {
+    width: 750px;
   }
 
-  .phone-container {
+  .header-items {
+    padding: 20px 0px;
+  }
+
+  .carousel-margin {
+    margin: 0 auto;
+  }
+
+  .articles {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    height: 1714px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button-container {
+    margin: 0px;
+  }
+
+  #bespoke-software,
+#it-support,
+#digital-marketing {
+    min-width: 294px;
+    max-height: 300px;
+    margin: 10px 0px;
+  }
+
+  #telecom-service,
+#cyber-security {
+    min-width: 345px;
+    max-height: 300px;
+    width: 345px;
+    margin: 30px 15px 0px 0px;
+  }
+
+  #developer-training,
+#web-design {
+    min-width: 345px;
+    max-height: 300px;
+    width: 345px;
+    margin: 30px 0px 0px 15px;
+  }
+
+  .header-items .phone {
     display: none;
   }
 
-  .logo-container {
+  .header-items .logo {
     order: 1;
   }
 
   .search-container {
-    order: 2;
-    width: 30%;
+    display: none;
+  }
+
+  .search-container-lrg {
+    display: inline-flex;
+    width: 35%;
+    margin: 0px 20px 0px 20px;
+    height: 63px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .search-container-lrg input {
+    padding-left: 10px;
+  }
+
+  .search-container-lrg input::placeholder {
+    opacity: 1;
+  }
+
+  .search-container-lrg i {
+    color: white;
+    background-color: #999aa2;
+  }
+
+  .search-box {
+    background-color: white;
   }
 
   .burger-container {
@@ -997,6 +1386,10 @@ body {
   }
 
   .footer-container {
+    height: 528px;
+  }
+
+  .footer-container-contents {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -1024,37 +1417,122 @@ body {
   .social-button-linkedin {
     width: 45%;
   }
+
+  .culture-div p {
+    margin-bottom: 25px;
+  }
 }
 @media (min-width: 992px) {
+  .header-items,
+.buttons-container,
+.culture-div-container,
+.articles-container,
+.clients-container,
+.footer-container-contents,
+.accredits,
+.carousel-margin,
+.navbar-buttons,
+.nav-hover-contents {
+    width: 970px;
+  }
+
+  .nav-hover-contents {
+    margin: auto auto;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    height: 1096px;
+    flex-wrap: wrap;
+  }
+
+  .button-container {
+    margin: 0px;
+  }
+
+  #bespoke-software,
+#it-support,
+#digital-marketing {
+    min-width: 294px;
+    max-height: 356px;
+    width: 294px;
+    height: 356px;
+  }
+
+  #bespoke-software {
+    margin-right: 15px;
+  }
+
+  #it-support {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  #digital-marketing {
+    margin-left: 15px;
+  }
+
+  #telecom-service,
+#cyber-security {
+    min-width: 455px;
+    max-height: 300px;
+    width: 455px;
+    margin: 30px 15px 0px 0px;
+  }
+
+  #developer-training,
+#web-design {
+    min-width: 455px;
+    max-height: 300px;
+    width: 445px;
+    margin: 30px 0px 0px 15px;
+  }
+
+  #cyber-security,
+#developer-training {
+    margin-bottom: 30px;
+  }
+
+  .search-container-lrg {
+    display: none;
+  }
+
   .support-button {
     display: inline-flex;
-    order: 2;
+    margin-right: 20px;
+    margin-left: -500px;
+    height: 56px;
+    width: 144px;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    align-items: center;
   }
 
   .contact-button {
     display: inline-flex;
-    order: 3;
+    margin-right: 20px;
+    height: 56px;
+    width: 144px;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    align-items: center;
   }
 
-  .search-container {
-    order: 4;
-  }
-
-  .burger-container {
-    order: 5;
-  }
-
-  .search-box {
-    display: none;
+  .search-button {
+    display: inline-flex;
+    height: 56px;
+    margin-right: 20px;
+    width: 63px;
+    font-size: 1.125rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
   }
 
   .culture-div {
     background-size: auto 100%;
     background-position: right center;
-  }
-
-  .articles-container {
-    display: flex;
   }
 
   .accredits {
@@ -1067,14 +1545,29 @@ body {
     width: 250px;
   }
 
-  .buttons-container {
+  .articles-container {
     display: flex;
-    flex-direction: column;
   }
 
-  .top-3-nav {
-    display: inline-flex;
-    flex-direction: row;
+  .img-container {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+  }
+
+  .img-container img {
+    transition: transform 0.6s;
+  }
+
+  .img-container img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+
+  .culture-div {
+    background: url("../img/asset27.png"), #333645;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1082,25 +1575,115 @@ body {
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  header {
-    background-color: purple;
+@media (min-width: 1260px) {
+  .header-items,
+.buttons-container,
+.articles-container,
+.clients-container,
+.footer-container-contents,
+.accredits,
+.carousel-margin,
+.navbar-buttons,
+.nav-hover-contents {
+    width: 1200px;
   }
 
-  .bottom-navs-4 {
+  .nav-hover-contents {
+    margin: auto auto;
+  }
+
+  .nav-button {
+    width: 193px;
+  }
+
+  .culture-div-container {
+    width: 600px;
+    margin-left: 15%;
+  }
+
+  .culture-div {
+    height: 553px;
+  }
+
+  .search-button {
+    display: none;
+  }
+
+  .search-container-lrg {
+    display: inline-flex;
+  }
+
+  .buttons-container {
+    display: flex;
     flex-direction: row;
+    height: 700px;
+    flex-wrap: wrap;
+    margin: 0px auto 30px;
+  }
+
+  .button-container {
+    margin: 0px;
+  }
+
+  #bespoke-software,
+#it-support,
+#digital-marketing {
+    min-width: 360px;
+    max-height: 356px;
+    width: 360px;
+    height: 356px;
+  }
+
+  #bespoke-software {
+    margin-right: 15px;
+  }
+
+  #it-support {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  #digital-marketing {
+    margin-left: 15px;
+  }
+
+  #telecom-service,
+#cyber-security,
+#web-design {
+    min-width: 270px;
+    max-height: 300px;
+    width: 270px;
+    margin: 30px 15px 0px 0px;
+  }
+
+  #developer-training {
+    min-width: 270px;
+    max-height: 300px;
+    width: 270px;
+    margin: 30px 0px 0px 10px;
   }
 
   .footer-container {
-    flex-direction: row;
+    height: 309px;
   }
 
-  .footer-container .break {
+  .footer-container-contents {
+    flex-direction: row;
+    margin: auto auto;
+  }
+
+  .footer-container-contents .break {
     display: none;
   }
 
   .social-media {
     margin-right: 0px;
+  }
+
+  .support-button {
+    display: inline-flex;
+    margin-right: 20px;
+    margin-left: -50px;
   }
 }
 

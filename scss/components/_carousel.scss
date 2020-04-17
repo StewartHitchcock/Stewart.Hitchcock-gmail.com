@@ -1,10 +1,11 @@
 .carousel {
-    // position: relative;
     height: 768px;
-    width: 400px;
+    width: auto;
     color:white;
     overflow: hidden;
+    // padding-top: 30px;
 
+    margin-top: 500px;
 }
 
 .carousel-img {
@@ -20,14 +21,18 @@
     top: 330px;
     bottom: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     position: absolute;
+
+}
+
+.carousel-margin {
+    margin: 0 25px;
 }
 
 .carousel h1 {
-    text-align: center;
     margin-bottom: 25px;
-    font-size: 38px;
+    font-size: 2.375rem;
     text-transform: uppercase;
     letter-spacing: .4px;
     line-height: 45px;
@@ -35,10 +40,9 @@
 }
 
 .carousel p {
-    text-align: center;
-    margin: 0px 25px;
     line-height: 30px;
     letter-spacing: .4px;
+    margin-bottom: 10px;
 }
 
 .carousel button {
@@ -46,11 +50,10 @@
     background-color: $nm-purple;
     border: none;
     color:white;
-    margin-left: 90px;
-    margin-top: 25px;
     padding: 10px 20px;
     font-size: 20px;
-    width: 60%;
+    width: 223px;
+    cursor: pointer;
 }
 
 .carousel button:hover {
