@@ -3,11 +3,8 @@
     width: auto;
     color:white;
     overflow: hidden;
-    // padding-top: 30px;
-
-    margin-top: 500px;
 }
-
+// Is the carousel img
 .carousel-img {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/asset3.jpeg) no-repeat;
     background-size: cover;
@@ -17,12 +14,14 @@
     transform-origin: 50% 50%;
 }
 
+// Postions the text overlay
   .carousel-text {
-    top: 330px;
+    top: 500px;
     bottom: 0;
     left: 0;
     width: 100%;
     position: absolute;
+    
 
 }
 
@@ -30,6 +29,8 @@
     margin: 0 25px;
 }
 
+
+// Contains the contents of the carousel
 .carousel h1 {
     margin-bottom: 25px;
     font-size: 2.375rem;

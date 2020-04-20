@@ -12,10 +12,6 @@ body {
   margin: 0px;
 }
 
-.hidden {
-  display: none;
-}
-
 .header-items,
 .carousel,
 .buttons-container,
@@ -74,7 +70,7 @@ body {
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
-  height: 493px;
+  height: 673px;
 }
 
 .culture-div h3 {
@@ -92,11 +88,6 @@ body {
   font-weight: 200;
   font-size: 1rem;
   line-height: 1.875rem;
-}
-
-.culture-div p:nth-of-type(1) {
-  font-weight: 600;
-  font-size: 1rem;
 }
 
 .clients-container {
@@ -291,9 +282,8 @@ body {
 }
 
 .search-icon {
-  padding: 0.5rem;
+  padding: 5px;
   background-color: #d9d9d9;
-  color: #000000;
 }
 
 .search-box {
@@ -453,8 +443,11 @@ body {
   border-radius: 3px;
   color: white;
   cursor: pointer;
-  width: 25%;
+  padding: 10px;
   margin-left: 20px;
+  width: 128px;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .read-more-button:hover {
@@ -468,8 +461,11 @@ body {
   border-radius: 3px;
   color: white;
   cursor: pointer;
-  width: 25%;
+  width: 128px;
   margin-left: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .read-more-button-dm:hover {
@@ -899,10 +895,11 @@ body {
 .articles h4 {
   padding: 10px 10px;
   border-bottom: solid black 2px;
-  width: 13%;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 75px;
+}
+
+.article-header-container {
+  margin: auto auto;
 }
 
 .articles a {
@@ -968,7 +965,6 @@ body {
   width: auto;
   color: white;
   overflow: hidden;
-  margin-top: 500px;
 }
 
 .carousel-img {
@@ -981,7 +977,7 @@ body {
 }
 
 .carousel-text {
-  top: 330px;
+  top: 500px;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1022,9 +1018,8 @@ body {
   background-color: #7e57a0;
 }
 
-@keyframes image-hover {}
 .navbar {
-  display: flex;
+  display: none;
   position: relative;
   width: 100%;
   height: 99px;
@@ -1139,7 +1134,7 @@ body {
 
 .nav-hover-contents {
   display: none;
-  width: 100%;
+  width: 100vw;
   height: 45px;
   position: absolute;
   top: 99px;
@@ -1255,12 +1250,37 @@ body {
   display: block;
 }
 
+.content a::after {
+  content: "-";
+  color: orange;
+}
+
 .nav-hover-contents a:last-of-type::after {
   display: none;
 }
 
 .nav-hover-contents a:nth-of-type(1n+2) {
   padding-left: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto auto;
+  vertical-align: auto;
+}
+.content a {
+  padding-top: 12px;
+}
+
+.content-dash {
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  content: "";
+  margin: auto 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1284,7 +1304,8 @@ body {
 .footer-container-contents,
 .clients-container,
 .accredits,
-.carousel-margin {
+.carousel-margin,
+.article-header-container {
     width: 750px;
   }
 
@@ -1421,6 +1442,10 @@ body {
   .culture-div p {
     margin-bottom: 25px;
   }
+
+  .culture-div {
+    height: 493px;
+  }
 }
 @media (min-width: 992px) {
   .header-items,
@@ -1432,12 +1457,9 @@ body {
 .accredits,
 .carousel-margin,
 .navbar-buttons,
-.nav-hover-contents {
+.article-header-container,
+.content {
     width: 970px;
-  }
-
-  .nav-hover-contents {
-    margin: auto auto;
   }
 
   .buttons-container {
@@ -1569,9 +1591,13 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+
+  .navbar {
+    display: flex;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .hidden {
+  .hidden-article {
     display: none;
   }
 }
@@ -1584,12 +1610,9 @@ body {
 .accredits,
 .carousel-margin,
 .navbar-buttons,
-.nav-hover-contents {
+.article-header-container,
+.content {
     width: 1200px;
-  }
-
-  .nav-hover-contents {
-    margin: auto auto;
   }
 
   .nav-button {

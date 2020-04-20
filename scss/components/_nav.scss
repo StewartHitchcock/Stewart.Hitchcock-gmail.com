@@ -1,7 +1,7 @@
 // Contains entire navbar
 
 .navbar {
-    display: flex;
+    display: none;
     position:relative;
     width: 100%;
     height: 99px;
@@ -131,7 +131,7 @@
 // Sets the dimensions of the revealing navbar elements and forces it to only appear on hover
 .nav-hover-contents  {
     display: none;
-    width: 100%;
+    width: 100vw;
     height: 45px;
     position:absolute; 
     top: 99px;
@@ -254,12 +254,10 @@
 
 // Adds the differentiators between each of the links in the revealer
 
-// .nav-hover-contents a::after {
-//     content: "-";
-//     padding-left: 20px;
-//     color: orange;
-//     z-index: 2;
-// }
+.content a::after {
+    content: "-";
+    color: orange;
+}
 
 .nav-hover-contents a:last-of-type::after  {
     display: none;
@@ -268,5 +266,26 @@
 .nav-hover-contents a:nth-of-type(1n+2) {
     padding-left: 20px;
 }
+
+.content {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto auto;
+    vertical-align: auto;
+    a {
+        padding-top: 12px;
+    }
+}
+
+.content-dash {
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    display:block;
+    content: "";
+    margin: auto 0;
+}
+
 
 
