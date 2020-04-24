@@ -101,6 +101,18 @@ body {
   height: 46px;
   padding: 0px 20px;
   margin: auto;
+  position: relative;
+  display: inline-block;
+}
+.client-container h3 {
+  font-size: 18px;
+  font-weight: 200;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+.client-container p {
+  font-size: 13px;
+  margin: auto auto;
 }
 
 .clients {
@@ -195,6 +207,89 @@ body {
   background: url("../img/asset26.jpeg") no-repeat;
 }
 
+.tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  color: white;
+  text-align: center;
+  background-color: #333645;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100px;
+}
+
+.tooltiptext1 {
+  right: -25px;
+}
+
+.tooltiptext2 {
+  right: -15px;
+}
+
+.tooltiptext3 {
+  right: 25px;
+}
+
+.tooltiptext4 {
+  right: -20px;
+}
+
+.tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+  margin-left: -25px;
+}
+
+.tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+  margin-left: -25px;
+}
+
+.tooltiptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+  margin-left: -40px;
+}
+
+.tooltiptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+  margin-left: -30px;
+}
+
+.client-container:hover .tooltiptext {
+  visibility: visible;
+}
+
+.span-divide {
+  width: 28px;
+  height: 3px;
+  margin: 0px auto 10px;
+  background-color: white;
+}
+
 .header-items {
   display: flex;
   flex-direction: row;
@@ -284,6 +379,7 @@ body {
 .search-icon {
   padding: 5px;
   background-color: #d9d9d9;
+  cursor: pointer;
 }
 
 .search-box {
@@ -302,6 +398,7 @@ body {
   border: none;
   border-radius: 2px;
   padding: 10px 5px;
+  cursor: pointer;
 }
 
 .support-button:hover {
@@ -316,6 +413,7 @@ body {
   border: none;
   border-radius: 2px;
   padding: 10px 5px;
+  cursor: pointer;
 }
 
 .contact-button:hover {
@@ -330,6 +428,7 @@ body {
   border: none;
   border-radius: 2px;
   padding: 14px 10px;
+  cursor: pointer;
 }
 
 .navbar {
@@ -477,6 +576,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .img-container img {
@@ -502,8 +602,9 @@ body {
   text-transform: uppercase;
   border-radius: 2px;
   border: none;
-  padding: 10px 0px;
+  padding: 15px 0px;
   font-size: 1.07rem;
+  cursor: pointer;
 }
 
 .culture-div button:hover {
@@ -530,7 +631,7 @@ body {
 }
 
 .button-container h2 {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin: 10px 0px;
   font-weight: 200;
@@ -545,15 +646,17 @@ body {
 .button-container p {
   text-align: center;
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .button-container button {
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 5px 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 17px;
 }
 
 #bespoke-software .icon-circle {
@@ -849,7 +952,7 @@ body {
   color: white;
 }
 
-#developer-training:hover .fa-shield-alt-button {
+#developer-training:hover .fa-graduation-cap-button {
   background-color: white;
   color: #926fb1;
 }
@@ -924,6 +1027,7 @@ body {
 
 .article-container {
   margin: 0px 10px;
+  background-color: white;
 }
 
 .articles-container {
@@ -944,6 +1048,7 @@ body {
   padding-top: 30px;
   border-top: solid #ccc 1px;
   display: flex;
+  margin: 25px 25px;
 }
 
 .avatar {
@@ -1040,12 +1145,14 @@ body {
   width: 154px;
   height: 99px;
   padding: 0px 15px;
-  border: solid black 1px;
+  border-left: 1px #808080 solid;
+  border-right: 1px #808080 solid;
   text-decoration: none;
   padding: 19px 0px 18px;
   text-decoration: none;
   color: white;
   text-align: center;
+  cursor: pointer;
 }
 
 .nav-buttons .nav-button {
@@ -1595,8 +1702,13 @@ body {
   .navbar {
     display: flex;
   }
+
+  .img-container img {
+    width: 471px;
+    height: auto;
+  }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1260px) {
   .hidden-article {
     display: none;
   }
@@ -1707,6 +1819,156 @@ body {
     display: inline-flex;
     margin-right: 20px;
     margin-left: -50px;
+  }
+
+  .img-container img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (min-width: 400px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .button-container p {
+    width: calc(100% - 2px);
+  }
+
+  .footer-container {
+    height: 1000px;
+  }
+
+  .aboutnm ul {
+    margin-left: -30px;
+  }
+
+  .website ul {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .social-media {
+    margin-left: 150px;
+  }
+
+  .aboutnm {
+    margin-left: 150px;
+  }
+
+  .footer-container {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .nav-button p {
+    margin-bottom: 1px;
+  }
+
+  .article-container {
+    width: 60%;
+    max-height: 700px;
+  }
+  .article-container p {
+    max-width: calc(100% - 2px);
+  }
+  .article-container p:first-of-type {
+    min-height: 66px;
+  }
+  .article-container .read-more-button {
+    height: 120px;
+  }
+
+  .img-container img {
+    height: auto;
+  }
+
+  .footer-container-contents {
+    justify-content: center;
+  }
+
+  .website h4 {
+    margin-left: 40px;
+  }
+  .website h4 ul {
+    margin-left: -20px;
+  }
+
+  .social-media {
+    margin-left: 30px;
+  }
+
+  .aboutnm ul {
+    margin-left: -40px;
+  }
+
+  .contactus {
+    margin-right: 20px;
+  }
+
+  .website {
+    margin-right: 180px;
+    margin-left: -20px;
+  }
+  .website h4 {
+    margin-left: 2px;
+  }
+  .website ul {
+    margin-right: -40px;
+  }
+}
+@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .support-button {
+    width: 215px;
+  }
+
+  .contact-button {
+    width: 275px;
+  }
+
+  .nav-button p {
+    margin-bottom: 1px;
+  }
+
+  .button-container p {
+    width: calc(100% - 2px);
+  }
+
+  #developer-training p {
+    margin-bottom: -5px;
+  }
+
+  .article-container {
+    width: 40%;
+    max-height: 613px;
+  }
+  .article-container p {
+    max-width: calc(100% - 2px);
+  }
+  .article-container p:first-of-type {
+    min-height: 66px;
+  }
+  .article-container .read-more-button {
+    height: 70px;
+  }
+  .article-container .read-more-button-dm {
+    height: 70px;
+  }
+
+  .img-container {
+    height: auto;
+  }
+
+  .footer-container-contents {
+    justify-content: center;
+  }
+
+  .footer-container {
+    height: 400px;
+  }
+
+  .aboutnm {
+    margin-left: 0px;
+  }
+
+  .website {
+    margin-left: 50px;
   }
 }
 

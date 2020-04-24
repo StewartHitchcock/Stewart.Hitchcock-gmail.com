@@ -1,6 +1,7 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
     <html>
         <head>
+            <meta charset="utf-8"/>
             <link rel="stylesheet" href="css/style.css">
             <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
             <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
@@ -10,7 +11,7 @@
             <header>
                 <div class="header-items">
                     <div class="logo-container">
-                        <a class="logo" href="#"><img src="img\nm-logo.png" alt="Netmatters logo"></a> 
+                        <a class="logo" href=""><img src="img/nm-logo.png" alt="Netmatters logo"></a> 
                     </div>
                     <a class="phone" href="tel:01603704020"><i class="fas fa-phone-alt"></i></a>
                     <button class="support-button"><i class="fas fa-mouse"></i>support</button>
@@ -21,9 +22,11 @@
                     </div>  
                     <button class= "search-button"><i class="fa fa-search"></i></button>
                     <div class="burger-container">
-                        <div class="burger-top"></div>
-                        <div class="burger"></div>
-                        <div class="burger"></div>
+                        <div>
+                            <div class="burger-top"></div>
+                            <div class="burger"></div>
+                            <div class="burger"></div>
+                        </div>
                         <p>Menu</p>
                     </div>  
                 </div>               
@@ -49,12 +52,12 @@
                         <div class="nav-button nav-bar-it"><i class="fas fa-desktop nav-icn"></i><p>IT</p>Support
                             <div class="nav-hover-contents nav-hover-it">
                                 <div class="content">
-                                <a href="">Managed IT Support</a><span class="content-dash"></span>
-                                <a href="">Business IT Support</a><span class="content-dash"></span>
-                                <a href="">Office 365</a><span class="content-dash"></span>
-                                <a href="">Consultancy</a><span class="content-dash"></span>
-                                <a href="">Cloud Provider</a><span class="content-dash"></span>
-                                <a href="">Data Backup</a>
+                                    <a href="">Managed IT Support</a><span class="content-dash"></span>
+                                    <a href="">Business IT Support</a><span class="content-dash"></span>
+                                    <a href="">Office 365</a><span class="content-dash"></span>
+                                    <a href="">Consultancy</a><span class="content-dash"></span>
+                                    <a href="">Cloud Provider</a><span class="content-dash"></span>
+                                    <a href="">Data Backup</a>
                                 </div>
                             </div> 
                         </div>
@@ -122,71 +125,85 @@
             </div>
 
             <div class="buttons-container">
-                <div href="" class="button-container" id="bespoke-software">
-                    <div class="icon-circle">
-                        <i class="fas fa-th btn-icn"></i>
+                <a href="">
+                    <div class="button-container" id="bespoke-software">
+                        <div class="icon-circle">
+                            <i class="fas fa-th btn-icn"></i>
+                        </div>
+                        <h2>Bespoke Software</h2>
+                        <span class="divider"></span>
+                        <p>Tailored software solutions to improve the business productivity and online profits. Our expert team will ensure a software solution.</p>
+                        <button class="fa-th-button" type="button">Read More</button>   
+                    </div> 
+                </a> 
+                <a href="">
+                    <div class="button-container" id="it-support">
+                        <div class="icon-circle">
+                            <i class="fas fa-desktop btn-icn"></i>
+                        </div>    
+                        <h2>IT Support</h2>
+                        <span class="divider"></span>
+                        <p>Remotely managed IT services that is catered to your businesses needs, adds value and reduces costs.</p>
+                        <button class="fa-desktop-button" type="button">Read More</button>
                     </div>
-                    <h2>Bespoke Software</h2>
-                    <span class="divider"></span>
-                    <p>Tailored software solutions to improve the business productivity and online profits. Our expert team will ensure a software solution.</p>
-                    <button class="fa-th-button" type="button">Read More</button>   
-                </div>  
-                <div class="button-container" id="it-support">
-                    <div class="icon-circle">
-                        <i class="fas fa-desktop btn-icn"></i>
-                    </div>    
-                    <h2>IT Support</h2>
-                    <span class="divider"></span>
-                    <p>Remotely managed IT services that is catered to your businesses needs, adds value and reduces costs.</p>
-                    <button class="fa-desktop-button" type="button">Read More</button>
-                </div>     
-                <div class="button-container" id="digital-marketing">
-                    <div class="icon-circle">
-                        <i class="fas fa-chart-bar btn-icn"></i>
-                    </div>    
-                    <h2>Digital Marketing</h2>
-                    <span class="divider"></span>
-                    <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monito online performances.</p>
-                    <button class="fa-chart-bar-button" type="button">Read More</button>
-                </div>   
+                </a>
+                <a href="">
+                    <div class="button-container" id="digital-marketing">
+                        <div class="icon-circle">
+                            <i class="fas fa-chart-bar btn-icn"></i>
+                        </div>    
+                        <h2>Digital Marketing</h2>
+                        <span class="divider"></span>
+                        <p>Driving brand awareness and ROI through creative digital marketing campaigns. We review and monito online performances.</p>
+                        <button class="fa-chart-bar-button" type="button">Read More</button>
+                    </div>  
+                </a> 
             <!-- Break Divider -->
             <div class="break"></div>
-                <div class="button-container" id="telecom-service">
-                    <div class="icon-circle">
-                        <i class="fas fa-phone-volume btn-icn"></i>
+                <a href="">
+                    <div class="button-container" id="telecom-service">
+                        <div class="icon-circle">
+                            <i class="fas fa-phone-volume btn-icn"></i>
+                        </div>
+                        <h2>Telecoms Services</h2>
+                        <span class="divider"></span>
+                        <p>Stay connected with bespoke telecoms solutions when you need it most.</p>
+                        <button class="fa-phone-volume-button" type="button">Read More</button>
+                    </div>   
+                </a>
+                <a href="">
+                    <div class="button-container" id="web-design">
+                        <div class="icon-circle">
+                            <i class="fas fa-code btn-icn"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <span class="divider"></span>
+                        <p>User-centric design for businesses looking to make a lasting first impression.</p>
+                        <button class="fa-code-button" type="button">Read More</button>
                     </div>
-                    <h2>Telecoms Services</h2>
-                    <span class="divider"></span>
-                    <p>Stay connected with bespoke telecoms solutions when you need it most.</p>
-                    <button class="fa-phone-volume-button" type="button">Read More</button>
-                </div>   
-                <div class="button-container" id="web-design">
-                    <div class="icon-circle">
-                        <i class="fas fa-code btn-icn"></i>
+                </a>
+                <a href="">
+                    <div class="button-container" id="cyber-security">
+                        <div class="icon-circle">
+                            <i class="fas fa-shield-alt btn-icn"></i>
+                        </div>
+                        <h2>Cyber Security</h2>
+                        <span class="divider"></span>
+                        <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
+                        <button class="fa-shield-alt-button" type="button">Read More</button>
+                    </div>  
+                </a>
+                <a href="">
+                    <div class="button-container" id="developer-training">
+                        <div class="icon-circle">
+                            <i class="fas fa-graduation-cap btn-icn"></i>
+                        </div>
+                        <h2>Developer Training</h2>
+                        <span class="divider"></span>
+                        <p>Have you considered a career in web development but you aren't sure where to start?</p>
+                        <button class="fa-graduation-cap-button" type="button">Read More</button>
                     </div>
-                    <h2>Web Design</h2>
-                    <span class="divider"></span>
-                    <p>User-centric design for businesses looking to make a lasting first impression.</p>
-                    <button class="fa-code-button" type="button">Read More</button>
-                </div>
-                <div class="button-container" id="cyber-security">
-                    <div class="icon-circle">
-                        <i class="fas fa-shield-alt btn-icn"></i>
-                    </div>
-                    <h2>Cyber Security</h2>
-                    <span class="divider"></span>
-                    <p>Ensuring your online business stays secure 24/7, 365 days of the year.</p>
-                    <button class="fa-shield-alt-button" type="button">Read More</button>
-                </div>  
-                <div class="button-container" id="developer-training">
-                    <div class="icon-circle">
-                        <i class="fas fa-graduation-cap btn-icn"></i>
-                    </div>
-                    <h2>Developer Training</h2>
-                    <span class="divider"></span>
-                    <p>Have you considered a career in web development but you aren't sure where to start?</p>
-                    <button class="fa-graduation-cap-button" type="button">Read More</button>
-                </div>
+                </a>   
             </div>
             <!-- Contains the culture section -->
             <div class= "culture-div">
@@ -195,7 +212,7 @@
                     <p>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</p>
                     <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
                     <p>We provide cost effective, reliable solutions to a range of services; from bespoke cloud-based management systems, workflow and IT solutions through to creative website development and integrated digital campaigning.</p>
-                    <button href="#" type="button">Our Culture <i class="fas fa-arrow-right"></i></button> 
+                    <button data-href="" type="button">Our Culture <i class="fas fa-arrow-right"></i></button> 
                 </div>    
             </div>
             <!-- contains articles section -->
@@ -206,14 +223,15 @@
                 <div class= "articles-container">
                     <div class="article-container">
                         <div class="img-container">
-                            <img src="img\asset 7.jpeg" alt="Business as usual">
+                            <img src="img/asset 7.jpeg" alt="Business as usual">
                             <button class="img-button">News</button>
                         </div>
-                        <h5><a href="#">Coronavirus Update: We are here to support you.</a></h5>
+                        <h5><a href="">Coronavirus Update: We are here to support you.</a></h5>
                         <p>With so much uncertainty across the UK and around the world at the moment, there are many question...</p>
                         <button class="read-more-button" type="button">Read More</button>
                         <div class="author">
-                            <img class="avatar" src="img\asset 8.jpeg" alt="James Gulliver">
+
+                            <img class="avatar" src="img/asset 8.jpeg" alt="James Gulliver">
                             <div class="author-details">
                                 <h5><strong>Posted by James Gulliver</strong></h5>
                                 <p>19th March 2020</p>
@@ -223,14 +241,14 @@
                     <br>  
                     <div class="article-container">
                         <div class="img-container">
-                            <img src="img\coronavirus-our-plan-NHEI.jpg" alt="Coronavirus plan">
+                            <img src="img/coronavirus-our-plan-NHEI.jpg" alt="Coronavirus plan">
                             <button class="img-button">News</button>
                         </div>
                         <h5><a href="#">Coronavirus: Our Plan</a></h5>
                         <p>The government is predicting that it is highly likely we will see a significant expansion in the n...</p>
                         <button class="read-more-button" type="button">Read More</button>
                         <div class="author">
-                            <img class="avatar" src="img\netmatters-ltd-VXAv.png" alt="Netmatters logo">
+                            <img class="avatar" src="img/netmatters-ltd-VXAv.png" alt="Netmatters logo">
                             <div class="author-details">
                                 <h5><strong>Posted by: Netmatters Ltd</strong></h5>
                                 <p>5th March 2020</p>
@@ -239,14 +257,14 @@
                     </div>
                     <div class= "article-container hidden-article">
                         <div class="img-container">
-                            <img src="img\happy-25th-birthday-nSbO.jpg" alt="Henry turns 25">
+                            <img src="img/happy-25th-birthday-nSbO.jpg" alt="Henry turns 25">
                             <button class="img-button">News</button>
                         </div>    
                         <h5><a href="#">Happy 25th Birthday Henry!</a></h5>
                         <p>Happy 25th Birthday Henry! Henry Hardwell joined us in November 2018 as part of our ever grow...</p>
                         <button class="read-more-button-dm" type="button">Read More</button>
                         <div class="author">
-                            <img class="avatar" src="img\netmatters-ltd-VXAv.png" alt="Netmatters logo">
+                            <img class="avatar" src="img/netmatters-ltd-VXAv.png" alt="Netmatters logo">
                             <div class="author-details">
                                 <h5><strong>Posted by: Netmatters Ltd</strong></h5>
                                 <p>26th March 2020</p>
@@ -258,15 +276,35 @@
             <div class="clients-container">
                 <div class="client-container">
                     <div class="busseys clients"></div>
+                    <span class="tooltiptext tooltiptext1">
+                        <h3>Busseys</h3>
+                        <div class="span-divide"></div>
+                        <p>One of the UK's leading Ford dealerships.</p>
+                    </span>
                 </div>
                 <div class="client-container">
                     <div class="crane clients"></div>
+                    <span class="tooltiptext tooltiptext2">
+                        <h3>Crane Garden Builders</h3>
+                        <div class="span-divide"></div>
+                        <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
+                    </span>
                 </div>
                 <div class="client-container">
                     <div class="beat clients"></div>
+                    <span class="tooltiptext tooltiptext3">
+                        <h3>Beat</h3>
+                        <div class="span-divide"></div>
+                        <p>The UK's eating disorder charity founded in 1989.</p>
+                    </span>
                 </div>
                 <div class="client-container">
                     <div class="diver clients"></div>
+                    <span class="tooltiptext tooltiptext4">
+                        <h3>Northern Diver</h3>
+                        <div class="span-divide"></div>
+                        <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
+                    </span>
                 </div>
             </div>
             <!-- Contains the footer -->
@@ -282,7 +320,7 @@
                                 NR18 0WZ<br>
                             </address>
                             <br>
-                            <p>Tel: <a href="tel:01603 70 40 20">01603 70 40 20</a></p>
+                            <p>Tel: <a href="tel:01603704020">01603 70 40 20</a></p>
                             <p>Email: <a href="mailto:support@netmatters.com">Support@netmatters.com</a></p>
                         </div>
                         <div class="aboutnm">
@@ -321,7 +359,7 @@
                 <div class="accreditation silver-ms"></div>
                 <div class="accreditation future-50"></div>
                 <div class="accreditation qms"></div>
-                <div class="accreditation carbon-charter"></div>
+                <div class="accreditation carbon-charter"></div>           
             </div>
             </footer>
         </body>

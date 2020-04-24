@@ -164,6 +164,8 @@
     .culture-div {
         height: 493px;
     }
+
+    
 }
 
 @media (min-width: 992px) {
@@ -319,9 +321,16 @@
         display: flex;
     }
 
+    .img-container img {
+        width: 471px;
+        height: auto;
+    }
+
+    
+
 }
 
-@media (min-width:992px) and (max-width: 1199px){
+@media (min-width:992px) and (max-width: 1260px){
     // This hides the 3rd article in this viewport
     .hidden-article {
         display: none;
@@ -439,5 +448,180 @@
         display: inline-flex;
         margin-right: 20px;
         margin-left: -50px; 
+    }
+
+    .img-container img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+// IE media queries
+
+@media (min-width:400px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    .button-container p {
+        width: calc(100% - 2px); 
+    }
+
+    .footer-container {
+        height: 1000px;
+    }
+
+    .aboutnm ul {
+        margin-left: -30px;
+    }
+
+    .website ul {
+        margin-left: -30px;
+    }
+}
+
+
+@media (min-width:768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+   .social-media {
+       margin-left: 150px;
+   }
+
+   .aboutnm {
+       margin-left: 150px;
+   }
+   
+   .footer-container {
+    height: 550px;
+}
+}
+
+
+@media (min-width:992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    .nav-button p {
+        margin-bottom: 1px;
+    }
+    
+    .article-container {
+        width: 60%;
+        max-height: 700px; 
+
+        p {
+            max-width: calc(100% - 2px); 
+        }  
+
+        p:first-of-type {
+            min-height: 66px;
+        }
+
+        .read-more-button {
+            height: 120px;
+        }
+
+    }
+
+    .img-container img {
+        height: auto;
+    }
+
+    .footer-container-contents {
+        justify-content: center;
+    }
+
+    .website h4 {
+        margin-left: 40px;
+
+        ul {
+            margin-left: -20px;
+        }
+    }
+
+    .social-media {
+        margin-left: 30px;
+    }
+
+    .aboutnm ul{
+        margin-left: -40px;
+    }
+
+    .contactus {
+        margin-right: 20px;
+    }
+
+   .website {
+       margin-right: 180px;
+       margin-left: -20px;
+
+       h4 {
+           margin-left: 2px;
+       }
+
+       ul {
+           margin-right: -40px;
+       }
+   }
+
+}
+
+@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    .support-button {
+        width: 215px;
+    }
+
+    .contact-button {
+        width: 275px;
+    }
+
+    .nav-button p {
+        margin-bottom: 1px;
+    }
+
+    .button-container p {
+        width: calc(100% - 2px); 
+    }
+
+    #developer-training p{
+        margin-bottom: -5px;
+    }
+
+    .article-container {
+        width: 40%;
+        max-height: 613px; 
+
+        p {
+            max-width: calc(100% - 2px); 
+        }  
+
+        p:first-of-type {
+            min-height: 66px;
+        }
+
+        .read-more-button {
+            height: 70px;
+        }
+
+        .read-more-button-dm {
+            height: 70px;
+        }
+    }
+
+    .img-container {
+        height: auto;
+    }
+
+    .footer-container-contents {
+        justify-content: center;
+    }
+
+    .footer-container {
+        height: 400px;
+    }
+
+    .aboutnm {
+        margin-left: 0px;
+    }
+
+    .website {
+        margin-left: 50px;
     }
 }

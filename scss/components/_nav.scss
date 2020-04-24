@@ -26,12 +26,14 @@
     width: 154px;
     height: 99px;
     padding: 0px 15px;
-    border: solid black 1px; 
+    border-left: 1px #808080 solid;
+    border-right: 1px #808080 solid;
     text-decoration: none;
     padding: 19px 0px 18px;
     text-decoration: none;
     color: white;
     text-align: center; 
+    cursor:pointer;
 }
 
 .nav-buttons .nav-button {

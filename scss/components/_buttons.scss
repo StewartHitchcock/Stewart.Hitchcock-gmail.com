@@ -76,8 +76,7 @@
     margin-left: 20px;
     padding: 10px;
     text-transform: uppercase;
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 
 .read-more-button-dm:hover {
@@ -91,6 +90,8 @@
     position: relative;
     width: 100%;
     height: auto;
+    cursor:pointer;
+    
 }
 
 .img-container img {
@@ -118,8 +119,9 @@
     text-transform: uppercase;
     border-radius: 2px;
     border: none;
-    padding: 10px 0px;
+    padding: 15px 0px;
     font-size: 1.07rem;
+    cursor:pointer;
 }
 
 .culture-div button:hover {
@@ -153,7 +155,7 @@
 }
 
 .button-container h2 {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     margin: 10px 0px;
     font-weight: 200;
@@ -168,16 +170,17 @@
 .button-container p {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .button-container button {
-    border-radius: 2px;
+    border-radius: 3px;
     border: none;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px 15px;
-
+    padding: 10px 20px;
+    cursor:pointer;
+    font-size: 17px;
 }
 
 
@@ -508,7 +511,7 @@
     color: white;
 }
 
-#developer-training:hover .fa-shield-alt-button {
+#developer-training:hover .fa-graduation-cap-button {
     background-color: white;
     color: $nm-purple;
 }
