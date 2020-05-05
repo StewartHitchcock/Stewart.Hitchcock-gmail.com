@@ -27,8 +27,38 @@
         width: 750px;
     }
 
+    .culture-div-container {
+        margin: auto;
+    }
+
+    .footer-container-contents {
+        margin: auto;
+        
+    }
+
+    .contactus {
+        margin-left: 20px;
+    }
+
+    .website {
+        margin-left: 20px;
+    }
+
+    .aboutnm {
+        margin-left: 100px;
+    }
+
+    .social-media {
+        margin-left: 100px;
+    }
+
+    header {
+        height: 110px;
+    }
+
     .header-items {
-        padding: 20px 0px;
+       margin-top: 30px;
+       padding: 0px;
     }
 
     .carousel-margin {
@@ -92,9 +122,9 @@
         display: inline-flex;
         width: 35%;
         margin: 0px 20px 0px 20px;
-        height: 63px;
         background-color: white;
         border: 2px solid rgba(0,0,0,0.1);
+        height: 63px;
     }
 
     .search-container-lrg input {
@@ -130,18 +160,12 @@
 
     .footer-container-contents {
         flex-direction: row;
-        justify-content: space-evenly;
         flex-wrap: wrap;
-    }
-
-    .website {
-        margin-left: -10px;
     }
     
     .social-media {
         flex-direction: row;
         width: 300px;
-        margin-right: -160px;
     }
 
     .social-button-facebook {
@@ -164,7 +188,6 @@
     .culture-div {
         height: 493px;
     }
-
     
 }
 
@@ -182,6 +205,71 @@
     .article-header-container,
     .content {
         width: 970px;
+    }
+
+    .aboutnm {
+        margin-left: 300px;
+    }
+
+    .social-media {
+        margin-left: 300px;
+    }
+
+    .google-partner {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .silver-ms {
+        width: 130px;
+        margin-left: 0px;
+        height: 100px;
+    
+    }
+
+    .carbon-charter {
+        width: 290px;
+    }
+
+    .future-50 {
+        width: 50px;
+    }
+
+    .clients {
+        height: 63px;
+        margin-left: 10px;
+    }
+
+    .busseys {
+        width: 169px;
+    }
+
+    .crane {
+        width:260px;
+    }
+
+    .beat {
+        width: 65px;
+    }
+
+    .diver {
+        width: 290px;
+    }
+
+    .tooltiptext1 {
+        right: -20px;
+    }
+    
+    .tooltiptext2 {
+        right: 50px;
+    }
+    
+    .tooltiptext3 {
+        right: -80px;
+    }
+    
+    .tooltiptext4 {
+        right: 50px;
     }
 
     .buttons-container {
@@ -246,29 +334,30 @@
         display: inline-flex;
         margin-right: 20px;
         margin-left: -500px; 
-        height: 56px;
-        width: 144px;
         font-size: 1.125rem;
-        border-radius: 5px;
+        padding: 5px 15px;
+        cursor:pointer;
+        height: 63px;
+        width: 144px;
         align-items: center;
     }
 
     .contact-button {
         display: inline-flex;
         margin-right: 20px; 
-        height: 56px;
-        width: 144px;
         font-size: 1.125rem;   
-        border-radius: 5px;    
+        padding: 5px 15px;
+        cursor:pointer;
+        height: 63px;
+        width: 144px;
         align-items: center;
     }
 
     .search-button {
         display: inline-flex;
-        height: 56px;
+        height: 63px;
         margin-right: 20px;
         width: 63px;
-        font-size: 1.125rem;
         border-radius: 5px;
         align-items: center;
         justify-content: center;
@@ -283,12 +372,10 @@
     // Resizing the accreditations section
 
     .accredits {
-        height:210px;
-        margin-top: 100px;
+        height:100px;
     }
    
     .accreditation {
-        height: 150px;
         width: 250px;
     }
 
@@ -353,15 +440,74 @@
         width: 1200px;
     }
 
+    .article-container {
+        width: 380px;
+    }
+
+    .aboutnm {
+        margin-left: 70px;
+    }
+
+    .social-media {
+        margin-left: 70px;
+    }
+
+    .contactus {
+        margin-left: 70px;
+    }
+
+    .website {
+        margin-left: 70px;
+    }
+
+    .clients {
+        height: 70px;
+        margin-left: 50px;
+    }
+
+    .busseys {
+        width: 188px;
+    }
+
+    .crane {
+        width:287px;
+    }
+
+    .beat {
+        width: 72px;
+    }
+
+    .diver {
+        width: 322px;
+    }
 
     .nav-button {
-        width: 193px;
+        width: 200px;
+    }
+
+    .tooltiptext1 {
+        right: -10px;
+    }
+    
+    .tooltiptext2 {
+        right: 55px;
+    }
+    
+    .tooltiptext3 {
+        right: -80px;
+    }
+    
+    .tooltiptext4 {
+        right: 75px;
     }
 
     .culture-div-container {
-        width: 600px;
-        margin-left: 15%;
-
+        display: flex;
+        flex-direction: column;
+        width: 1100px;
+        margin: auto;
+        justify-content: flex-start;
+        
     }
 
     .culture-div {
@@ -447,7 +593,11 @@
     .support-button {
         display: inline-flex;
         margin-right: 20px;
-        margin-left: -50px; 
+        padding-right: 20px;
+    }
+
+    .contact-button {
+        padding-right: 20px;
     }
 
     .img-container img {
@@ -543,9 +693,6 @@
         margin-left: -40px;
     }
 
-    .contactus {
-        margin-right: 20px;
-    }
 
    .website {
        margin-right: 180px;

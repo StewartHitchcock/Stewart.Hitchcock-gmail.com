@@ -12,6 +12,10 @@ body {
   margin: 0px;
 }
 
+html {
+  margin-top: -20px;
+}
+
 .header-items,
 .carousel,
 .buttons-container,
@@ -90,6 +94,11 @@ body {
   line-height: 1.875rem;
 }
 
+.client-shadow {
+  box-shadow: inset 0px 1px 20px -6px #666666;
+  width: 100%;
+}
+
 .clients-container {
   display: flex;
   height: 170px;
@@ -97,31 +106,19 @@ body {
 }
 
 .client-container {
-  width: 200px;
-  height: 46px;
   padding: 0px 20px;
-  margin: auto;
   position: relative;
   display: inline-block;
 }
-.client-container h3 {
-  font-size: 18px;
-  font-weight: 200;
-  padding-bottom: 10px;
-  white-space: nowrap;
-}
-.client-container p {
-  font-size: 13px;
-  margin: auto auto;
-}
 
 .clients {
-  height: 100%;
+  height: 45px;
 }
 
 .busseys {
   background: url("../img/asset 13.jpeg") no-repeat;
   background-size: 100% 100%;
+  width: 122px;
 }
 
 .busseys:hover {
@@ -132,6 +129,7 @@ body {
 .crane {
   background: url("../img/asset 15.jpeg") no-repeat;
   background-size: 100% 100%;
+  width: 185px;
 }
 
 .crane:hover {
@@ -142,6 +140,7 @@ body {
 .beat {
   background: url("../img/asset 17.jpeg") no-repeat;
   background-size: auto 100%;
+  width: 45px;
 }
 
 .beat:hover {
@@ -152,6 +151,7 @@ body {
 .diver {
   background: url("../img/asset 19.jpeg") no-repeat;
   background-size: 100% 100%;
+  width: 200px;
 }
 
 .diver:hover {
@@ -162,49 +162,58 @@ body {
 .accredits {
   display: flex;
   flex-direction: row;
-  height: 150px;
+  height: 100px;
   justify-content: space-around;
   margin-top: 50px;
-}
-
-.silver-ms {
-  background: url("../img/asset20.jpeg") no-repeat;
-  height: 100px;
-  width: 200px;
-  padding: 0px 20px;
-}
-
-.future-50 {
-  background: url("../img/asset21.jpeg") no-repeat;
-  height: 100px;
-  width: 200px;
-  padding: 0px 20px;
-}
-
-.future-50:hover {
-  background: url("../img/asset22.jpeg") no-repeat;
-}
-
-.qms {
-  background: url("../img/asset23.jpeg") no-repeat;
-  height: 100px;
-  width: 200px;
-  padding: 0px 20px;
-}
-
-.qms:hover {
-  background: url("../img/asset24.jpeg") no-repeat;
+  margin-bottom: 20px;
 }
 
 .carbon-charter {
-  background: url("../img/asset25.jpeg") no-repeat;
+  width: 135px;
+}
+
+.google-partner {
+  background: url("../img/GooglePartner.jpg") no-repeat center center;
   height: 100px;
   width: 200px;
-  padding: 0px 20px;
+  margin-right: 50px;
+}
+
+.silver-ms {
+  background: url("../img/asset20.jpeg") no-repeat center center;
+  width: 130px;
+  margin-left: -60px;
+  height: 100px;
+}
+
+.future-50 {
+  background: url("../img/asset21.jpeg") no-repeat center center;
+  height: 100px;
+  width: 40px;
+}
+
+.future-50:hover {
+  background: url("../img/asset22.jpeg") no-repeat center center;
+}
+
+.qms {
+  background: url("../img/asset23.jpeg") no-repeat center center;
+  height: 100px;
+  width: 60px;
+}
+
+.qms:hover {
+  background: url("../img/asset24.jpeg") no-repeat center center;
+}
+
+.carbon-charter {
+  background: url("../img/asset25.jpeg") no-repeat center center;
+  height: 100px;
+  width: 175px;
 }
 
 .carbon-charter:hover {
-  background: url("../img/asset26.jpeg") no-repeat;
+  background: url("../img/asset26.jpeg") no-repeat center center;
 }
 
 .tooltiptext {
@@ -220,19 +229,19 @@ body {
 }
 
 .tooltiptext1 {
-  right: -25px;
+  right: -50px;
 }
 
 .tooltiptext2 {
-  right: -15px;
+  right: -5px;
 }
 
 .tooltiptext3 {
-  right: 25px;
+  right: -95px;
 }
 
 .tooltiptext4 {
-  right: -20px;
+  right: -10px;
 }
 
 .tooltiptext1::after {
@@ -365,6 +374,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
+  height: 47px;
 }
 
 .search-container input {
@@ -377,9 +387,21 @@ body {
 }
 
 .search-icon {
-  padding: 5px;
+  padding: 15px;
+  padding-right: 5px;
   background-color: #d9d9d9;
   cursor: pointer;
+  border-radius: 2px;
+  font-size: 21px;
+}
+
+.search-icon-2 {
+  padding: 15px;
+  padding-top: 20px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 21px;
 }
 
 .search-box {
@@ -396,9 +418,11 @@ body {
   text-transform: uppercase;
   margin-right: 5px;
   border: none;
-  border-radius: 2px;
-  padding: 10px 5px;
+  border-radius: 5px;
+  padding: 5px 15px;
   cursor: pointer;
+  height: 63px;
+  width: 144px;
 }
 
 .support-button:hover {
@@ -411,9 +435,11 @@ body {
   color: white;
   text-transform: uppercase;
   border: none;
-  border-radius: 2px;
-  padding: 10px 5px;
+  border-radius: 5px;
+  padding: 5px 15px;
   cursor: pointer;
+  height: 63px;
+  width: 144px;
 }
 
 .contact-button:hover {
@@ -424,11 +450,12 @@ body {
   display: none;
   background-color: #999AA2;
   color: white;
-  text-transform: uppercase;
   border: none;
   border-radius: 2px;
-  padding: 14px 10px;
+  padding: 10px 15px 5px;
   cursor: pointer;
+  height: 56px;
+  font-size: 20px;
 }
 
 .navbar {
@@ -446,6 +473,7 @@ body {
 
 .contactus {
   margin: 0px 0px 30px;
+  line-height: normal;
 }
 
 .contactus a {
@@ -459,6 +487,7 @@ body {
 
 .aboutnm {
   margin: 0px 0px 30px;
+  line-height: normal;
 }
 
 .aboutnm li {
@@ -476,6 +505,7 @@ body {
 
 .website {
   margin: 0px 0px 30px;
+  line-height: normal;
 }
 
 .website li {
@@ -503,6 +533,7 @@ body {
   color: white;
   cursor: pointer;
   border: rgba(0, 0, 0, 0.25);
+  padding: 10px 0px;
 }
 
 .social-button-facebook:hover {
@@ -517,6 +548,7 @@ body {
   color: white;
   cursor: pointer;
   border: rgba(0, 0, 0, 0.25);
+  padding: 10px 0px;
 }
 
 .social-button-twitter:hover {
@@ -530,6 +562,7 @@ body {
   color: white;
   cursor: pointer;
   border: rgba(0, 0, 0, 0.25);
+  padding: 10px 0px;
 }
 
 .social-button-linkedin:hover {
@@ -538,7 +571,7 @@ body {
 
 .read-more-button {
   background-color: #926fb1;
-  border-color: #926fb1;
+  border: none;
   border-radius: 3px;
   color: white;
   cursor: pointer;
@@ -556,8 +589,8 @@ body {
 
 .read-more-button-dm {
   background-color: #2ecc71;
-  border-color: #2ecc71;
-  border-radius: 3px;
+  border: none;
+  border-radius: 5px;
   color: white;
   cursor: pointer;
   width: 128px;
@@ -995,14 +1028,19 @@ body {
   background-color: #f2f2f2;
 }
 
-.articles h4 {
-  padding: 10px 10px;
-  border-bottom: solid black 2px;
-  width: 75px;
+.article-header-container h4 {
+  border-bottom: solid black 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 65px;
+  padding: 35px 0px;
+  margin-left: 20px;
 }
 
 .article-header-container {
   margin: auto auto;
+  background-color: white;
+  height: 104px;
 }
 
 .articles a {
@@ -1084,7 +1122,7 @@ body {
 .carousel-text {
   top: 500px;
   bottom: 0;
-  left: 0;
+  left: 30px;
   width: 100%;
   position: absolute;
 }
@@ -1095,7 +1133,7 @@ body {
 
 .carousel h1 {
   margin-bottom: 25px;
-  font-size: 2.375rem;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 0.4px;
   line-height: 45px;
@@ -1106,6 +1144,7 @@ body {
   line-height: 30px;
   letter-spacing: 0.4px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .carousel button {
@@ -1117,6 +1156,7 @@ body {
   font-size: 20px;
   width: 223px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .carousel button:hover {
@@ -1129,6 +1169,7 @@ body {
   width: 100%;
   height: 99px;
   background-color: #333645;
+  border-bottom: 1px white solid;
 }
 
 .navbar-buttons {
@@ -1142,17 +1183,18 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #333645;
-  width: 154px;
+  width: 180px;
   height: 99px;
   padding: 0px 15px;
-  border-left: 1px #808080 solid;
-  border-right: 1px #808080 solid;
   text-decoration: none;
   padding: 19px 0px 18px;
-  text-decoration: none;
+  text-transform: uppercase;
   color: white;
   text-align: center;
   cursor: pointer;
+  font-size: 18px;
+  border-right: 1px solid #926fb1;
+  border-bottom: 1px white solid;
 }
 
 .nav-buttons .nav-button {
@@ -1169,6 +1211,10 @@ body {
 
 .nav-bar-web:hover .fa-code {
   color: white;
+}
+
+.nav-bar-web {
+  border-left: 1px solid #926fb1;
 }
 
 .navbar-buttons .fa-desktop {
@@ -1212,7 +1258,7 @@ body {
 }
 
 .navbar-buttons p {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .nav-bar-web:hover {
@@ -1244,7 +1290,7 @@ body {
   width: 100vw;
   height: 45px;
   position: absolute;
-  top: 99px;
+  top: 98px;
   left: 0;
 }
 .nav-hover-contents ::before {
@@ -1357,15 +1403,6 @@ body {
   display: block;
 }
 
-.content a::after {
-  content: "-";
-  color: orange;
-}
-
-.nav-hover-contents a:last-of-type::after {
-  display: none;
-}
-
 .nav-hover-contents a:nth-of-type(1n+2) {
   padding-left: 20px;
 }
@@ -1416,8 +1453,37 @@ body {
     width: 750px;
   }
 
+  .culture-div-container {
+    margin: auto;
+  }
+
+  .footer-container-contents {
+    margin: auto;
+  }
+
+  .contactus {
+    margin-left: 20px;
+  }
+
+  .website {
+    margin-left: 20px;
+  }
+
+  .aboutnm {
+    margin-left: 100px;
+  }
+
+  .social-media {
+    margin-left: 100px;
+  }
+
+  header {
+    height: 110px;
+  }
+
   .header-items {
-    padding: 20px 0px;
+    margin-top: 30px;
+    padding: 0px;
   }
 
   .carousel-margin {
@@ -1481,9 +1547,9 @@ body {
     display: inline-flex;
     width: 35%;
     margin: 0px 20px 0px 20px;
-    height: 63px;
     background-color: white;
     border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 63px;
   }
 
   .search-container-lrg input {
@@ -1519,18 +1585,12 @@ body {
 
   .footer-container-contents {
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-  }
-
-  .website {
-    margin-left: -10px;
   }
 
   .social-media {
     flex-direction: row;
     width: 300px;
-    margin-right: -160px;
   }
 
   .social-button-facebook {
@@ -1567,6 +1627,70 @@ body {
 .article-header-container,
 .content {
     width: 970px;
+  }
+
+  .aboutnm {
+    margin-left: 300px;
+  }
+
+  .social-media {
+    margin-left: 300px;
+  }
+
+  .google-partner {
+    width: 400px;
+    margin-right: 20px;
+  }
+
+  .silver-ms {
+    width: 130px;
+    margin-left: 0px;
+    height: 100px;
+  }
+
+  .carbon-charter {
+    width: 290px;
+  }
+
+  .future-50 {
+    width: 50px;
+  }
+
+  .clients {
+    height: 63px;
+    margin-left: 10px;
+  }
+
+  .busseys {
+    width: 169px;
+  }
+
+  .crane {
+    width: 260px;
+  }
+
+  .beat {
+    width: 65px;
+  }
+
+  .diver {
+    width: 290px;
+  }
+
+  .tooltiptext1 {
+    right: -20px;
+  }
+
+  .tooltiptext2 {
+    right: 50px;
+  }
+
+  .tooltiptext3 {
+    right: -80px;
+  }
+
+  .tooltiptext4 {
+    right: 50px;
   }
 
   .buttons-container {
@@ -1631,29 +1755,30 @@ body {
     display: inline-flex;
     margin-right: 20px;
     margin-left: -500px;
-    height: 56px;
-    width: 144px;
     font-size: 1.125rem;
-    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    height: 63px;
+    width: 144px;
     align-items: center;
   }
 
   .contact-button {
     display: inline-flex;
     margin-right: 20px;
-    height: 56px;
-    width: 144px;
     font-size: 1.125rem;
-    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    height: 63px;
+    width: 144px;
     align-items: center;
   }
 
   .search-button {
     display: inline-flex;
-    height: 56px;
+    height: 63px;
     margin-right: 20px;
     width: 63px;
-    font-size: 1.125rem;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
@@ -1665,12 +1790,10 @@ body {
   }
 
   .accredits {
-    height: 210px;
-    margin-top: 100px;
+    height: 100px;
   }
 
   .accreditation {
-    height: 150px;
     width: 250px;
   }
 
@@ -1727,13 +1850,73 @@ body {
     width: 1200px;
   }
 
+  .article-container {
+    width: 380px;
+  }
+
+  .aboutnm {
+    margin-left: 70px;
+  }
+
+  .social-media {
+    margin-left: 70px;
+  }
+
+  .contactus {
+    margin-left: 70px;
+  }
+
+  .website {
+    margin-left: 70px;
+  }
+
+  .clients {
+    height: 70px;
+    margin-left: 50px;
+  }
+
+  .busseys {
+    width: 188px;
+  }
+
+  .crane {
+    width: 287px;
+  }
+
+  .beat {
+    width: 72px;
+  }
+
+  .diver {
+    width: 322px;
+  }
+
   .nav-button {
-    width: 193px;
+    width: 200px;
+  }
+
+  .tooltiptext1 {
+    right: -10px;
+  }
+
+  .tooltiptext2 {
+    right: 55px;
+  }
+
+  .tooltiptext3 {
+    right: -80px;
+  }
+
+  .tooltiptext4 {
+    right: 75px;
   }
 
   .culture-div-container {
-    width: 600px;
-    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    margin: auto;
+    justify-content: flex-start;
   }
 
   .culture-div {
@@ -1818,7 +2001,11 @@ body {
   .support-button {
     display: inline-flex;
     margin-right: 20px;
-    margin-left: -50px;
+    padding-right: 20px;
+  }
+
+  .contact-button {
+    padding-right: 20px;
   }
 
   .img-container img {
@@ -1896,10 +2083,6 @@ body {
 
   .aboutnm ul {
     margin-left: -40px;
-  }
-
-  .contactus {
-    margin-right: 20px;
   }
 
   .website {

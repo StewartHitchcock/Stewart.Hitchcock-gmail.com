@@ -88,6 +88,11 @@
 
 // Clients container
 
+.client-shadow {
+    box-shadow: inset 0px 1px 20px -6px #666666;
+    width: 100%;
+}
+
 .clients-container {
     display: flex;
     height: 170px;
@@ -95,33 +100,19 @@
 }
 
 .client-container {
-    width: 200px;
-    height: 46px;
     padding: 0px 20px;
-    margin: auto;
     position: relative;
     display: inline-block;
-
-    h3 {
-        font-size: 18px;
-        font-weight: 200;
-        padding-bottom: 10px;
-        white-space: nowrap;
-    }
-
-    p {
-        font-size: 13px;  
-        margin: auto auto;
-    }
 }
 
 .clients {
-    height: 100%;
+    height: 45px;
 }
 
 .busseys {
     background: url("../img/asset 13.jpeg") no-repeat; 
-    background-size: 100% 100%;  
+    background-size: 100% 100%; 
+    width: 122px;  
 }
 .busseys:hover {
     background: url("../img/asset12.png") no-repeat; 
@@ -130,17 +121,21 @@
 
 .crane {
     background: url("../img/asset 15.jpeg") no-repeat;  
-    background-size: 100% 100%;  
+    background-size: 100% 100%; 
+    width: 185px;
 }
 
 .crane:hover {
     background: url("../img/asset 14.png") no-repeat;
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
 }
 
 .beat {
     background: url("../img/asset 17.jpeg") no-repeat; 
     background-size: auto 100%; 
+    width: 45px;
+  
+
 }
 
 .beat:hover {
@@ -150,7 +145,9 @@
 
 .diver {
     background: url("../img/asset 19.jpeg") no-repeat; 
-    background-size: 100% 100%;   
+    background-size: 100% 100%;
+    width: 200px;
+      
 }
 
 .diver:hover {
@@ -163,52 +160,60 @@
 .accredits {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 100px;
     justify-content: space-around;
     margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.carbon-charter {
+    width: 135px;
+}
+
+.google-partner{
+    background: url("../img/GooglePartner.jpg") no-repeat center center;
+    height: 100px;
+    width: 200px;
+    margin-right: 50px;
 }
 
 .silver-ms{
-    background: url("../img/asset20.jpeg") no-repeat;
+    background: url("../img/asset20.jpeg") no-repeat center center;
+    width: 130px;
+    margin-left: -60px;
     height: 100px;
-    width: 200px;
-    padding: 0px 20px;
-    
 }
 
 .future-50 {
-    background: url("../img/asset21.jpeg") no-repeat;
+    background: url("../img/asset21.jpeg") no-repeat center center;
     height: 100px;
-    width: 200px;
-    padding: 0px 20px;
+    width: 40px;
     
 }
 
 .future-50:hover {
-    background: url("../img/asset22.jpeg") no-repeat;
+    background: url("../img/asset22.jpeg") no-repeat center center;
 }
 
 .qms {
-    background: url("../img/asset23.jpeg") no-repeat;
+    background: url("../img/asset23.jpeg") no-repeat center center;
     height: 100px;
-    width: 200px;
-    padding: 0px 20px;
+    width: 60px;
     
 }
 
 .qms:hover {
-    background: url("../img/asset24.jpeg") no-repeat;
+    background: url("../img/asset24.jpeg") no-repeat center center;
 }
 
 .carbon-charter {
-    background: url("../img/asset25.jpeg") no-repeat;
+    background: url("../img/asset25.jpeg") no-repeat center center;
     height: 100px;
-    width: 200px;
-    padding: 0px 20px;
+    width: 175px;
 }
 
 .carbon-charter:hover {
-    background: url("../img/asset26.jpeg") no-repeat;
+    background: url("../img/asset26.jpeg") no-repeat center center;
 }
 
 .tooltiptext {
@@ -225,19 +230,19 @@ bottom: 100px;
 }
 
 .tooltiptext1 {
-    right: -25px;
+    right: -50px;
 }
 
 .tooltiptext2 {
-    right: -15px;
+    right: -5px;
 }
 
 .tooltiptext3 {
-    right: 25px;
+    right: -95px;
 }
 
 .tooltiptext4 {
-    right: -20px;
+    right: -10px;
 }
 
 .tooltiptext1::after {

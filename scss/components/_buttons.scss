@@ -9,6 +9,7 @@
     color: white;
     cursor: pointer;
     border:rgba(0,0,0,0.25); 
+    padding: 10px 0px;
 }
 
 .social-button-facebook:hover {
@@ -24,6 +25,7 @@
     color: white;
     cursor: pointer;
     border:rgba(0,0,0,0.25); 
+    padding: 10px 0px;
 }
 
 .social-button-twitter:hover {
@@ -38,6 +40,7 @@
     color: white;
     cursor: pointer;
     border:rgba(0,0,0,0.25); 
+    padding: 10px 0px;
    
 }
 
@@ -49,7 +52,7 @@
 
 .read-more-button {
     background-color: $nm-purple;
-    border-color: $nm-purple;
+    border: none;
     border-radius: 3px;
     color: white;
     cursor: pointer;
@@ -58,7 +61,6 @@
     width: 128px;
     text-transform: uppercase;
     font-size: 18px;
-    
 }
 
 .read-more-button:hover {
@@ -68,8 +70,8 @@
 
 .read-more-button-dm {
     background-color: $nm-green;
-    border-color: $nm-green;
-    border-radius: 3px;
+    border: none;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     width: 128px;
