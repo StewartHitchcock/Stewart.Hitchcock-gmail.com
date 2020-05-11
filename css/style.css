@@ -682,7 +682,7 @@ html {
   font-size: 13px;
 }
 
-.button-container button {
+.button-container .button {
   border-radius: 3px;
   border: none;
   text-transform: uppercase;
@@ -1123,7 +1123,7 @@ html {
   top: 500px;
   bottom: 0;
   left: 30px;
-  width: 100%;
+  width: 95%;
   position: absolute;
 }
 
@@ -2014,6 +2014,10 @@ html {
   }
 }
 @media (min-width: 400px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .burger-container {
+    display: block;
+  }
+
   .button-container p {
     width: calc(100% - 2px);
   }
@@ -2028,6 +2032,10 @@ html {
 
   .website ul {
     margin-left: -30px;
+  }
+
+  .google-partner {
+    background: url("../img/GooglePartner-Copy.png") no-repeat center center;
   }
 }
 @media (min-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -2046,6 +2054,10 @@ html {
 @media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .nav-button p {
     margin-bottom: 1px;
+  }
+
+  .nav-icn {
+    padding-bottom: 0px;
   }
 
   .article-container {
@@ -2095,14 +2107,22 @@ html {
   .website ul {
     margin-right: -40px;
   }
-}
-@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .support-button {
-    width: 215px;
+
+  .content a {
+    font-size: 16px;
   }
 
+  .contactus {
+    margin-left: -150px;
+  }
+
+  .aboutnm {
+    margin-left: 170px;
+  }
+}
+@media (min-width: 1260px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .contact-button {
-    width: 275px;
+    width: 200px;
   }
 
   .nav-button p {
@@ -2146,12 +2166,23 @@ html {
     height: 400px;
   }
 
+  .contactus {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .aboutnm {
     margin-left: 0px;
+    margin-right: 50px;
   }
 
   .website {
-    margin-left: 50px;
+    margin-left: 0px;
+    margin-right: 150px;
+  }
+
+  .social-media {
+    margin-left: 0px;
   }
 }
 
