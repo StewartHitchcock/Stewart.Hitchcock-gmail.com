@@ -37,42 +37,7 @@
   margin-right: 50px;
 }
 
-// Burger button styling
 
-.burger-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: 15px;
-  background-color: $nm-blue;  
-  justify-content: center;
-  cursor: pointer;
-  padding: 10px 15px 5px;
-  border-radius: 3px;
-  height: 63px;
-}
-
-.burger-container p {
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
-.burger,
-.burger-top {
-  width: 35px;
-  height: 3px;
-  margin: 0px auto 6px;
-  background-color: white;
-}
-
-.burger-container:hover {
-  background-color: #22242e;
-}
-
-.burger-container:hover button{
-  background-color: #22242e;
-}
 
 
 // Search bar styling
