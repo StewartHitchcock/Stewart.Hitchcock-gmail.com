@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', function(){
     }
 });
 
-
 popUpAccept.addEventListener('click', () => {
     localStorage.setItem('cookie', 'true');
     popUp.style.display = "none";

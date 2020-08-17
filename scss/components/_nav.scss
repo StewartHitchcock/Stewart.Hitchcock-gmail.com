@@ -288,5 +288,15 @@
     margin: auto 0;
 }
 
+.bar {
+    width: 100%;
+    background-color:$purple;
+}
 
+.container {
+    width: 900px;
 
+    @media screen and (min-width: 1268px) {
+        width: 1200px;
+    }
+}
